@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E210AD51E45D500007A0B25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AD41E45D500007A0B25 /* AppDelegate.swift */; };
+		9E210AD71E45D500007A0B25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AD61E45D500007A0B25 /* ViewController.swift */; };
+		9E210ADA1E45D500007A0B25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E210AD81E45D500007A0B25 /* Main.storyboard */; };
+		9E210ADD1E45D501007A0B25 /* Vruster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E210ADB1E45D500007A0B25 /* Vruster.xcdatamodeld */; };
+		9E210ADF1E45D501007A0B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E210ADE1E45D501007A0B25 /* Assets.xcassets */; };
+		9E210AE21E45D501007A0B25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E210AE01E45D501007A0B25 /* LaunchScreen.storyboard */; };
+		9E210AED1E45D501007A0B25 /* VrusterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AEC1E45D501007A0B25 /* VrusterTests.swift */; };
+		9E210AF81E45D501007A0B25 /* VrusterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AF71E45D501007A0B25 /* VrusterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E210AE91E45D501007A0B25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E210AC91E45D500007A0B25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E210AD01E45D500007A0B25;
+			remoteInfo = Vruster;
+		};
+		9E210AF41E45D501007A0B25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E210AC91E45D500007A0B25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E210AD01E45D500007A0B25;
+			remoteInfo = Vruster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E210AD11E45D500007A0B25 /* Vruster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vruster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E210AD41E45D500007A0B25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E210AD61E45D500007A0B25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E210AD91E45D500007A0B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E210ADC1E45D501007A0B25 /* Vruster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vruster.xcdatamodel; sourceTree = "<group>"; };
+		9E210ADE1E45D501007A0B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E210AE11E45D501007A0B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E210AE31E45D501007A0B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E210AE81E45D501007A0B25 /* VrusterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VrusterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E210AEC1E45D501007A0B25 /* VrusterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrusterTests.swift; sourceTree = "<group>"; };
+		9E210AEE1E45D501007A0B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E210AF31E45D501007A0B25 /* VrusterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VrusterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E210AF71E45D501007A0B25 /* VrusterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrusterUITests.swift; sourceTree = "<group>"; };
+		9E210AF91E45D501007A0B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E210ACE1E45D500007A0B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E210AE51E45D501007A0B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E210AF01E45D501007A0B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E210AC81E45D500007A0B25 = {
+			isa = PBXGroup;
+			children = (
+				9E210AD31E45D500007A0B25 /* Vruster */,
+				9E210AEB1E45D501007A0B25 /* VrusterTests */,
+				9E210AF61E45D501007A0B25 /* VrusterUITests */,
+				9E210AD21E45D500007A0B25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E210AD21E45D500007A0B25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E210AD11E45D500007A0B25 /* Vruster.app */,
+				9E210AE81E45D501007A0B25 /* VrusterTests.xctest */,
+				9E210AF31E45D501007A0B25 /* VrusterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E210AD31E45D500007A0B25 /* Vruster */ = {
+			isa = PBXGroup;
+			children = (
+				9E210AD41E45D500007A0B25 /* AppDelegate.swift */,
+				9E210AD61E45D500007A0B25 /* ViewController.swift */,
+				9E210AD81E45D500007A0B25 /* Main.storyboard */,
+				9E210ADE1E45D501007A0B25 /* Assets.xcassets */,
+				9E210AE01E45D501007A0B25 /* LaunchScreen.storyboard */,
+				9E210AE31E45D501007A0B25 /* Info.plist */,
+				9E210ADB1E45D500007A0B25 /* Vruster.xcdatamodeld */,
+			);
+			path = Vruster;
+			sourceTree = "<group>";
+		};
+		9E210AEB1E45D501007A0B25 /* VrusterTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E210AEC1E45D501007A0B25 /* VrusterTests.swift */,
+				9E210AEE1E45D501007A0B25 /* Info.plist */,
+			);
+			path = VrusterTests;
+			sourceTree = "<group>";
+		};
+		9E210AF61E45D501007A0B25 /* VrusterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9E210AF71E45D501007A0B25 /* VrusterUITests.swift */,
+				9E210AF91E45D501007A0B25 /* Info.plist */,
+			);
+			path = VrusterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E210AD01E45D500007A0B25 /* Vruster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E210AFC1E45D501007A0B25 /* Build configuration list for PBXNativeTarget "Vruster" */;
+			buildPhases = (
+				9E210ACD1E45D500007A0B25 /* Sources */,
+				9E210ACE1E45D500007A0B25 /* Frameworks */,
+				9E210ACF1E45D500007A0B25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vruster;
+			productName = Vruster;
+			productReference = 9E210AD11E45D500007A0B25 /* Vruster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E210AE71E45D501007A0B25 /* VrusterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E210AFF1E45D501007A0B25 /* Build configuration list for PBXNativeTarget "VrusterTests" */;
+			buildPhases = (
+				9E210AE41E45D501007A0B25 /* Sources */,
+				9E210AE51E45D501007A0B25 /* Frameworks */,
+				9E210AE61E45D501007A0B25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E210AEA1E45D501007A0B25 /* PBXTargetDependency */,
+			);
+			name = VrusterTests;
+			productName = VrusterTests;
+			productReference = 9E210AE81E45D501007A0B25 /* VrusterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9E210AF21E45D501007A0B25 /* VrusterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E210B021E45D501007A0B25 /* Build configuration list for PBXNativeTarget "VrusterUITests" */;
+			buildPhases = (
+				9E210AEF1E45D501007A0B25 /* Sources */,
+				9E210AF01E45D501007A0B25 /* Frameworks */,
+				9E210AF11E45D501007A0B25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E210AF51E45D501007A0B25 /* PBXTargetDependency */,
+			);
+			name = VrusterUITests;
+			productName = VrusterUITests;
+			productReference = 9E210AF31E45D501007A0B25 /* VrusterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E210AC91E45D500007A0B25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Hiso3d;
+				TargetAttributes = {
+					9E210AD01E45D500007A0B25 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					9E210AE71E45D501007A0B25 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9E210AD01E45D500007A0B25;
+					};
+					9E210AF21E45D501007A0B25 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9E210AD01E45D500007A0B25;
+					};
+				};
+			};
+			buildConfigurationList = 9E210ACC1E45D500007A0B25 /* Build configuration list for PBXProject "Vruster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E210AC81E45D500007A0B25;
+			productRefGroup = 9E210AD21E45D500007A0B25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E210AD01E45D500007A0B25 /* Vruster */,
+				9E210AE71E45D501007A0B25 /* VrusterTests */,
+				9E210AF21E45D501007A0B25 /* VrusterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E210ACF1E45D500007A0B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E210AE21E45D501007A0B25 /* LaunchScreen.storyboard in Resources */,
+				9E210ADF1E45D501007A0B25 /* Assets.xcassets in Resources */,
+				9E210ADA1E45D500007A0B25 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E210AE61E45D501007A0B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E210AF11E45D501007A0B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E210ACD1E45D500007A0B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E210AD71E45D500007A0B25 /* ViewController.swift in Sources */,
+				9E210AD51E45D500007A0B25 /* AppDelegate.swift in Sources */,
+				9E210ADD1E45D501007A0B25 /* Vruster.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E210AE41E45D501007A0B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E210AED1E45D501007A0B25 /* VrusterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E210AEF1E45D501007A0B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E210AF81E45D501007A0B25 /* VrusterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E210AEA1E45D501007A0B25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E210AD01E45D500007A0B25 /* Vruster */;
+			targetProxy = 9E210AE91E45D501007A0B25 /* PBXContainerItemProxy */;
+		};
+		9E210AF51E45D501007A0B25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E210AD01E45D500007A0B25 /* Vruster */;
+			targetProxy = 9E210AF41E45D501007A0B25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E210AD81E45D500007A0B25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E210AD91E45D500007A0B25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E210AE01E45D501007A0B25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E210AE11E45D501007A0B25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E210AFA1E45D501007A0B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E210AFB1E45D501007A0B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E210AFD1E45D501007A0B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Vruster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hiso3D.Vruster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9E210AFE1E45D501007A0B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Vruster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hiso3D.Vruster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9E210B001E45D501007A0B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VrusterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hiso3D.VrusterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vruster.app/Vruster";
+			};
+			name = Debug;
+		};
+		9E210B011E45D501007A0B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VrusterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hiso3D.VrusterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vruster.app/Vruster";
+			};
+			name = Release;
+		};
+		9E210B031E45D501007A0B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = VrusterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hiso3D.VrusterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Vruster;
+			};
+			name = Debug;
+		};
+		9E210B041E45D501007A0B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = VrusterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hiso3D.VrusterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Vruster;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E210ACC1E45D500007A0B25 /* Build configuration list for PBXProject "Vruster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E210AFA1E45D501007A0B25 /* Debug */,
+				9E210AFB1E45D501007A0B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E210AFC1E45D501007A0B25 /* Build configuration list for PBXNativeTarget "Vruster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E210AFD1E45D501007A0B25 /* Debug */,
+				9E210AFE1E45D501007A0B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9E210AFF1E45D501007A0B25 /* Build configuration list for PBXNativeTarget "VrusterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E210B001E45D501007A0B25 /* Debug */,
+				9E210B011E45D501007A0B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9E210B021E45D501007A0B25 /* Build configuration list for PBXNativeTarget "VrusterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E210B031E45D501007A0B25 /* Debug */,
+				9E210B041E45D501007A0B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9E210ADB1E45D500007A0B25 /* Vruster.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9E210ADC1E45D501007A0B25 /* Vruster.xcdatamodel */,
+			);
+			currentVersion = 9E210ADC1E45D501007A0B25 /* Vruster.xcdatamodel */;
+			path = Vruster.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9E210AC91E45D500007A0B25 /* Project object */;
+}
