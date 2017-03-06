@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="5Fz-Hr-lyR">
-                    <rect key="frame" x="4" y="217" width="369" height="50"/>
+                    <rect key="frame" x="31" y="217" width="315" height="50"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLI-ls-PHt">
                             <rect key="frame" x="0.0" y="0.0" width="140" height="50"/>
@@ -30,16 +30,13 @@
                             <state key="normal" title="Sign in">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="didPressSigninButtonWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="FoU-BR-14p"/>
+                            </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foi-1p-TDc">
-                            <rect key="frame" x="175" y="15" width="19" height="20"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoa-Dd-21C">
-                            <rect key="frame" x="229" y="0.0" width="140" height="50"/>
-                            <color key="backgroundColor" red="0.77380198239999998" green="0.33833509680000001" blue="0.32463854549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <rect key="frame" x="175" y="0.0" width="140" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="140" id="GLz-MA-eNA"/>
                                 <constraint firstAttribute="height" constant="50" id="dIh-tm-guE"/>
@@ -48,11 +45,14 @@
                             <state key="normal" title="Sign up">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="didPressSignupButtonWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="FW5-xo-w3d"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="foi-1p-TDc" firstAttribute="top" secondItem="5Fz-Hr-lyR" secondAttribute="top" constant="15" id="5tH-XC-Wb7"/>
                         <constraint firstItem="tLI-ls-PHt" firstAttribute="top" secondItem="5Fz-Hr-lyR" secondAttribute="top" id="PoX-C7-rFe"/>
+                        <constraint firstItem="Eoa-Dd-21C" firstAttribute="baseline" secondItem="tLI-ls-PHt" secondAttribute="baseline" id="bGc-GD-3u4"/>
                     </constraints>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vruster" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6L-U8-3Iz">

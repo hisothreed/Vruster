@@ -111,6 +111,7 @@
 			children = (
 				9E210AD41E45D500007A0B25 /* AppDelegate.swift */,
 				9E210AD81E45D500007A0B25 /* Main.storyboard */,
+				9E4AF5061E6DF3170049230B /* Services */,
 				9EC35C5F1E46474D00666EB7 /* Model */,
 				9E75173F1E6B3C7E0061033E /* Views */,
 				9EC35C5E1E46473B00666EB7 /* ViewControllers */,
@@ -140,6 +141,21 @@
 			path = VrusterUITests;
 			sourceTree = "<group>";
 		};
+		9E4AF5061E6DF3170049230B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		9E6D8F241E6DE29B004FE7E6 /* FlowCollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				9EC35C601E46476C00666EB7 /* PagingViewCell.swift */,
+			);
+			name = FlowCollectionViews;
+			sourceTree = "<group>";
+		};
 		9E75173F1E6B3C7E0061033E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +167,7 @@
 		9E7517421E6B3CE20061033E /* GuestFlow */ = {
 			isa = PBXGroup;
 			children = (
+				9E6D8F241E6DE29B004FE7E6 /* FlowCollectionViews */,
 				9E7517461E6B4C930061033E /* Flow1 */,
 				9E7517471E6B4CA30061033E /* Flow2 */,
 			);
@@ -185,7 +202,6 @@
 		9EC35C5E1E46473B00666EB7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9EC35C601E46476C00666EB7 /* PagingViewCell.swift */,
 				9E210B071E45D615007A0B25 /* WelcomeViewController.swift */,
 			);
 			name = ViewControllers;

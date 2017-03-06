@@ -16,10 +16,18 @@ class PagingViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
     
+        setUpUI()
+        
+    }
+    
+    func setUpUI() {
+    
         LogoImage.image = UIImage(named: "logo")
         
         Text.contentMode = .scaleAspectFit
-        Text.numberOfLines = 0 
+        Text.numberOfLines = 0
+       
+        
     }
     
     override init(frame: CGRect) {

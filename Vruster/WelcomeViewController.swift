@@ -8,8 +8,12 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
+class WelcomeViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,SecondFlowViewDelegate{
+    
 
+
+    @IBOutlet var pageControl: UIPageControl!
+    
     @IBOutlet weak var PagingCollectionView: UICollectionView!    
     
   
@@ -22,14 +26,17 @@ class WelcomeViewController: UIViewController, UICollectionViewDataSource,UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
-        
         setUpUI()
+        
         
         textArray = ["We handle shopping and deliever everything to you home","It's never been that Easy"]
         images = [UIImage(named: "welcom")!,UIImage(named: "welcom2")!]
     
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
     }
     
     
@@ -37,6 +44,7 @@ class WelcomeViewController: UIViewController, UICollectionViewDataSource,UIColl
 
         
         ///// collectionView layout
+        
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
@@ -48,28 +56,39 @@ class WelcomeViewController: UIViewController, UICollectionViewDataSource,UIColl
         PagingCollectionView.dataSource = self
         
         ///get it
-        
         let flowView = Bundle.main.loadNibNamed("FlowView", owner: self, options: nil)?[0] as? UIView
-        let secondFlowView  = Bundle.main.loadNibNamed("SecondFlowView", owner: self, options: nil)?[0] as? UIView
-        
+        let secondFView : secondFlowView = Bundle.main.loadNibNamed("SecondFlowView", owner: self, options: nil)?[0] as! secondFlowView
+        secondFView.delegate = self
         /// place it
-        
         flowView?.frame = CGRect(x: 0, y: 0, width: flowScroll.frame.width, height: self.flowScroll.frame.height)
-        secondFlowView?.frame = CGRect(x: self.view.frame.width , y: 0, width: flowScroll.frame.width, height: flowScroll.frame.height)
-
+        secondFView.frame = CGRect(x: self.view.frame.width , y: 0, width: flowScroll.frame.width, height: flowScroll.frame.height)
         flowScroll.contentSize.width = self.view.frame.width * 2
         flowScroll.contentMode = .right
         
         
         /// add it
         flowScroll.addSubview(flowView!)
-        flowScroll.addSubview(secondFlowView!)
-        
+        flowScroll.addSubview(secondFView)
+
         flowScroll.delegate = self
         flowScroll.isPagingEnabled = true
         flowScroll.tag = 1
-      
+        pageControl.numberOfPages = 2
+        pageControl.currentPage = 0
+        
+        
 
+    }
+    
+    func didPressSignin() {
+        
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Signin")
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    func didPressSignup() {
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -94,6 +113,11 @@ class WelcomeViewController: UIViewController, UICollectionViewDataSource,UIColl
         let cell = PagingCollectionView.dequeueReusableCell(withReuseIdentifier: "PageCell", for: indexPath) as! PagingViewCell
         cell.Text.text = textArray?[indexPath.row]
         cell.PageImage.image = images?[indexPath.row]
+        let blankFilter = UIView(frame: CGRect(x: 0, y: 0, width: cell.frame.width,height: cell.frame.height))
+        blankFilter.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
+        
+        cell.PageImage.addSubview(blankFilter)
+        
         cell.frame.size.width = self.view.frame.width
         return cell
     
@@ -108,13 +132,14 @@ class WelcomeViewController: UIViewController, UICollectionViewDataSource,UIColl
                 let indexPath = NSIndexPath(row: 1, section: 0)
                 
                 PagingCollectionView.scrollToItem(at: indexPath as IndexPath, at: .right, animated: true)
-                
+                pageControl.currentPage = 1
             }else {
                 
                 let indexPath = NSIndexPath(row: 0, section: 0)
                 
                 PagingCollectionView.scrollToItem(at: indexPath as IndexPath, at: .right, animated: true)
-                
+                pageControl.currentPage = 0
+
             }
         }
     }
@@ -128,6 +153,8 @@ class WelcomeViewController: UIViewController, UICollectionViewDataSource,UIColl
         let cell = PagingCollectionView.visibleCells[0]
         
         let indexPath = PagingCollectionView.indexPath(for: cell)
+        
+        pageControl.currentPage = (indexPath?.row)!
         
         let newOffsetX = Int(flowScroll.frame.width)*(indexPath?.row)!
         

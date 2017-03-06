@@ -8,16 +8,18 @@
 
 import UIKit
 
+
 class secondFlowView: UIView {
     
     
-@IBOutlet weak var SignUpButton: UIButton!
-@IBOutlet weak var SignInButton: UIButton!
-    
+    @IBOutlet weak var SignUpButton: UIButton!
+    @IBOutlet weak var SignInButton: UIButton!
+    var delegate : SecondFlowViewDelegate?
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
+
         setUpUI()
     }
     
@@ -30,6 +32,17 @@ class secondFlowView: UIView {
                 
     }
     
+    @IBAction func didPressSignupButton(sender: UIButton) {
+    
+        delegate?.didPressSignup()
+        
+        
+    }
+    @IBAction func didPressSigninButton(sender: UIButton) {
+     
+        delegate?.didPressSignin()
+        
+    }
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -38,4 +51,11 @@ class secondFlowView: UIView {
     }
     */
 
+}
+
+protocol SecondFlowViewDelegate {
+    
+    func didPressSignup()
+    func didPressSignin()
+    
 }
