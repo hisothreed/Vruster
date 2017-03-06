@@ -10,4 +10,24 @@ import UIKit
 
 class PagingViewCell: UICollectionViewCell {
     
+   @IBOutlet weak var PageImage : UIImageView!
+   @IBOutlet weak var LogoImage : UIImageView!
+   @IBOutlet weak var Text: UILabel!
+    
+    override func awakeFromNib() {
+    
+        LogoImage.image = UIImage(named: "logo")
+        
+        Text.contentMode = .scaleAspectFit
+        Text.numberOfLines = 0 
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
 }

@@ -9,7 +9,27 @@
 import UIKit
 
 class secondFlowView: UIView {
-
+    
+    
+@IBOutlet weak var SignUpButton: UIButton!
+@IBOutlet weak var SignInButton: UIButton!
+    
+    
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setUpUI()
+    }
+    
+    func setUpUI() {
+        
+        SignUpButton.layer.cornerRadius = 20
+        SignUpButton.clipsToBounds = true
+        SignInButton.layer.cornerRadius = 20
+        SignInButton.clipsToBounds = true
+                
+    }
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

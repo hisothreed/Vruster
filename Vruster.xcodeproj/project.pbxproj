@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		9E210AD51E45D500007A0B25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AD41E45D500007A0B25 /* AppDelegate.swift */; };
-		9E210AD71E45D500007A0B25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AD61E45D500007A0B25 /* ViewController.swift */; };
 		9E210ADA1E45D500007A0B25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E210AD81E45D500007A0B25 /* Main.storyboard */; };
 		9E210ADD1E45D501007A0B25 /* Vruster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E210ADB1E45D500007A0B25 /* Vruster.xcdatamodeld */; };
 		9E210ADF1E45D501007A0B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E210ADE1E45D501007A0B25 /* Assets.xcassets */; };
 		9E210AE21E45D501007A0B25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E210AE01E45D501007A0B25 /* LaunchScreen.storyboard */; };
 		9E210AED1E45D501007A0B25 /* VrusterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AEC1E45D501007A0B25 /* VrusterTests.swift */; };
 		9E210AF81E45D501007A0B25 /* VrusterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AF71E45D501007A0B25 /* VrusterUITests.swift */; };
+		9E210B081E45D615007A0B25 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210B071E45D615007A0B25 /* WelcomeViewController.swift */; };
+		9E7517411E6B3CBD0061033E /* FlowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7517401E6B3CBD0061033E /* FlowView.xib */; };
+		9E7517451E6B3D020061033E /* SecondFlowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7517441E6B3D020061033E /* SecondFlowView.xib */; };
+		9E7517491E6B4CC80061033E /* firstFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7517481E6B4CC80061033E /* firstFlowView.swift */; };
+		9E75174B1E6B4CD60061033E /* secondFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E75174A1E6B4CD60061033E /* secondFlowView.swift */; };
+		9EC35C611E46476C00666EB7 /* PagingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC35C601E46476C00666EB7 /* PagingViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,6 @@
 /* Begin PBXFileReference section */
 		9E210AD11E45D500007A0B25 /* Vruster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vruster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E210AD41E45D500007A0B25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E210AD61E45D500007A0B25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E210AD91E45D500007A0B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E210ADC1E45D501007A0B25 /* Vruster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vruster.xcdatamodel; sourceTree = "<group>"; };
 		9E210ADE1E45D501007A0B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		9E210AF31E45D501007A0B25 /* VrusterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VrusterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E210AF71E45D501007A0B25 /* VrusterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrusterUITests.swift; sourceTree = "<group>"; };
 		9E210AF91E45D501007A0B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E210B071E45D615007A0B25 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		9E7517401E6B3CBD0061033E /* FlowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlowView.xib; sourceTree = "<group>"; };
+		9E7517441E6B3D020061033E /* SecondFlowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondFlowView.xib; sourceTree = "<group>"; };
+		9E7517481E6B4CC80061033E /* firstFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstFlowView.swift; sourceTree = "<group>"; };
+		9E75174A1E6B4CD60061033E /* secondFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondFlowView.swift; sourceTree = "<group>"; };
+		9EC35C601E46476C00666EB7 /* PagingViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				9E210AD41E45D500007A0B25 /* AppDelegate.swift */,
-				9E210AD61E45D500007A0B25 /* ViewController.swift */,
 				9E210AD81E45D500007A0B25 /* Main.storyboard */,
+				9EC35C5F1E46474D00666EB7 /* Model */,
+				9E75173F1E6B3C7E0061033E /* Views */,
+				9EC35C5E1E46473B00666EB7 /* ViewControllers */,
 				9E210ADE1E45D501007A0B25 /* Assets.xcassets */,
 				9E210AE01E45D501007A0B25 /* LaunchScreen.storyboard */,
 				9E210AE31E45D501007A0B25 /* Info.plist */,
@@ -126,6 +138,65 @@
 				9E210AF91E45D501007A0B25 /* Info.plist */,
 			);
 			path = VrusterUITests;
+			sourceTree = "<group>";
+		};
+		9E75173F1E6B3C7E0061033E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E7517421E6B3CE20061033E /* GuestFlow */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9E7517421E6B3CE20061033E /* GuestFlow */ = {
+			isa = PBXGroup;
+			children = (
+				9E7517461E6B4C930061033E /* Flow1 */,
+				9E7517471E6B4CA30061033E /* Flow2 */,
+			);
+			name = GuestFlow;
+			sourceTree = "<group>";
+		};
+		9E7517461E6B4C930061033E /* Flow1 */ = {
+			isa = PBXGroup;
+			children = (
+				9E7517401E6B3CBD0061033E /* FlowView.xib */,
+				9E7517481E6B4CC80061033E /* firstFlowView.swift */,
+			);
+			name = Flow1;
+			sourceTree = "<group>";
+		};
+		9E7517471E6B4CA30061033E /* Flow2 */ = {
+			isa = PBXGroup;
+			children = (
+				9E7517441E6B3D020061033E /* SecondFlowView.xib */,
+				9E75174A1E6B4CD60061033E /* secondFlowView.swift */,
+			);
+			name = Flow2;
+			sourceTree = "<group>";
+		};
+		9E75174D1E6B4D520061033E /* FlowModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FlowModel;
+			sourceTree = "<group>";
+		};
+		9EC35C5E1E46473B00666EB7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EC35C601E46476C00666EB7 /* PagingViewCell.swift */,
+				9E210B071E45D615007A0B25 /* WelcomeViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9EC35C5F1E46474D00666EB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E75174D1E6B4D520061033E /* FlowModel */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +267,7 @@
 				TargetAttributes = {
 					9E210AD01E45D500007A0B25 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FZFRKGPX25;
 						ProvisioningStyle = Automatic;
 					};
 					9E210AE71E45D501007A0B25 = {
@@ -235,6 +307,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E7517451E6B3D020061033E /* SecondFlowView.xib in Resources */,
+				9E7517411E6B3CBD0061033E /* FlowView.xib in Resources */,
 				9E210AE21E45D501007A0B25 /* LaunchScreen.storyboard in Resources */,
 				9E210ADF1E45D501007A0B25 /* Assets.xcassets in Resources */,
 				9E210ADA1E45D500007A0B25 /* Main.storyboard in Resources */,
@@ -262,9 +336,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E210AD71E45D500007A0B25 /* ViewController.swift in Sources */,
+				9E75174B1E6B4CD60061033E /* secondFlowView.swift in Sources */,
+				9EC35C611E46476C00666EB7 /* PagingViewCell.swift in Sources */,
+				9E210B081E45D615007A0B25 /* WelcomeViewController.swift in Sources */,
 				9E210AD51E45D500007A0B25 /* AppDelegate.swift in Sources */,
 				9E210ADD1E45D501007A0B25 /* Vruster.xcdatamodeld in Sources */,
+				9E7517491E6B4CC80061033E /* firstFlowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FZFRKGPX25;
 				INFOPLIST_FILE = Vruster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hiso3D.Vruster;
@@ -426,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FZFRKGPX25;
 				INFOPLIST_FILE = Vruster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hiso3D.Vruster;
@@ -507,6 +586,7 @@
 				9E210AFE1E45D501007A0B25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E210AFF1E45D501007A0B25 /* Build configuration list for PBXNativeTarget "VrusterTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +595,7 @@
 				9E210B011E45D501007A0B25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E210B021E45D501007A0B25 /* Build configuration list for PBXNativeTarget "VrusterUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +604,7 @@
 				9E210B041E45D501007A0B25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
