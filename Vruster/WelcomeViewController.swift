@@ -73,6 +73,7 @@ class WelcomeViewController: UIViewController, UICollectionViewDataSource,UIColl
         flowScroll.delegate = self
         flowScroll.isPagingEnabled = true
         flowScroll.tag = 1
+        flowScroll.showsHorizontalScrollIndicator = false
         pageControl.numberOfPages = 2
         pageControl.currentPage = 0
         
@@ -82,13 +83,14 @@ class WelcomeViewController: UIViewController, UICollectionViewDataSource,UIColl
     
     func didPressSignin() {
         
-        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Signin")
-        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     func didPressSignup() {
         
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUp")
+        self.navigationController?.pushViewController(vc, animated: true)
         
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -119,6 +121,7 @@ class WelcomeViewController: UIViewController, UICollectionViewDataSource,UIColl
         cell.PageImage.addSubview(blankFilter)
         
         cell.frame.size.width = self.view.frame.width
+        cell.frame.size.height = self.PagingCollectionView.frame.height
         return cell
     
     }

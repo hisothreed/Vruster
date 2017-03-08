@@ -20,6 +20,10 @@
 		9E7517491E6B4CC80061033E /* firstFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7517481E6B4CC80061033E /* firstFlowView.swift */; };
 		9E75174B1E6B4CD60061033E /* secondFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E75174A1E6B4CD60061033E /* secondFlowView.swift */; };
 		9EC35C611E46476C00666EB7 /* PagingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC35C601E46476C00666EB7 /* PagingViewCell.swift */; };
+		9ECE20801E709B310041CFB6 /* PersonalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECE207F1E709B310041CFB6 /* PersonalInfoVC.swift */; };
+		9ECE20821E709BAC0041CFB6 /* AddressInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECE20811E709BAC0041CFB6 /* AddressInfoVC.swift */; };
+		9ECE20851E709EA90041CFB6 /* inputFieldsCustomV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECE20841E709EA90041CFB6 /* inputFieldsCustomV.swift */; };
+		9ECE20881E70A38F0041CFB6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECE20871E70A38F0041CFB6 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		9E7517481E6B4CC80061033E /* firstFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstFlowView.swift; sourceTree = "<group>"; };
 		9E75174A1E6B4CD60061033E /* secondFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondFlowView.swift; sourceTree = "<group>"; };
 		9EC35C601E46476C00666EB7 /* PagingViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingViewCell.swift; sourceTree = "<group>"; };
+		9ECE207F1E709B310041CFB6 /* PersonalInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoVC.swift; sourceTree = "<group>"; };
+		9ECE20811E709BAC0041CFB6 /* AddressInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressInfoVC.swift; sourceTree = "<group>"; };
+		9ECE20841E709EA90041CFB6 /* inputFieldsCustomV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inputFieldsCustomV.swift; sourceTree = "<group>"; };
+		9ECE20871E70A38F0041CFB6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,7 @@
 			children = (
 				9E210AD41E45D500007A0B25 /* AppDelegate.swift */,
 				9E210AD81E45D500007A0B25 /* Main.storyboard */,
+				9ECE20861E70A3740041CFB6 /* Extensions */,
 				9E4AF5061E6DF3170049230B /* Services */,
 				9EC35C5F1E46474D00666EB7 /* Model */,
 				9E75173F1E6B3C7E0061033E /* Views */,
@@ -167,6 +176,7 @@
 		9E7517421E6B3CE20061033E /* GuestFlow */ = {
 			isa = PBXGroup;
 			children = (
+				9ECE20831E709E860041CFB6 /* InputFieldsCustomization */,
 				9E6D8F241E6DE29B004FE7E6 /* FlowCollectionViews */,
 				9E7517461E6B4C930061033E /* Flow1 */,
 				9E7517471E6B4CA30061033E /* Flow2 */,
@@ -203,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				9E210B071E45D615007A0B25 /* WelcomeViewController.swift */,
+				9ECE207F1E709B310041CFB6 /* PersonalInfoVC.swift */,
+				9ECE20811E709BAC0041CFB6 /* AddressInfoVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -213,6 +225,22 @@
 				9E75174D1E6B4D520061033E /* FlowModel */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		9ECE20831E709E860041CFB6 /* InputFieldsCustomization */ = {
+			isa = PBXGroup;
+			children = (
+				9ECE20841E709EA90041CFB6 /* inputFieldsCustomV.swift */,
+			);
+			name = InputFieldsCustomization;
+			sourceTree = "<group>";
+		};
+		9ECE20861E70A3740041CFB6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9ECE20871E70A38F0041CFB6 /* Extensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,9 +381,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E75174B1E6B4CD60061033E /* secondFlowView.swift in Sources */,
+				9ECE20821E709BAC0041CFB6 /* AddressInfoVC.swift in Sources */,
+				9ECE20851E709EA90041CFB6 /* inputFieldsCustomV.swift in Sources */,
 				9EC35C611E46476C00666EB7 /* PagingViewCell.swift in Sources */,
 				9E210B081E45D615007A0B25 /* WelcomeViewController.swift in Sources */,
+				9ECE20881E70A38F0041CFB6 /* Extensions.swift in Sources */,
 				9E210AD51E45D500007A0B25 /* AppDelegate.swift in Sources */,
+				9ECE20801E709B310041CFB6 /* PersonalInfoVC.swift in Sources */,
 				9E210ADD1E45D501007A0B25 /* Vruster.xcdatamodeld in Sources */,
 				9E7517491E6B4CC80061033E /* firstFlowView.swift in Sources */,
 			);

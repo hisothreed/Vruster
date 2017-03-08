@@ -24,7 +24,7 @@ class PagingViewCell: UICollectionViewCell {
     
         LogoImage.image = UIImage(named: "logo")
         
-        Text.contentMode = .scaleAspectFit
+        Text.contentMode = .scaleAspectFill
         Text.numberOfLines = 0
        
         
