@@ -25,8 +25,6 @@ class inputFieldsCustomV: UIView {
         
     }
     func setUpUI() {
-    
-        
         
         let line : UIView = {
         

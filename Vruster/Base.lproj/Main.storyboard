@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ABa-c3-QuT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Use-UN-J0y">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,7 +37,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PageCell" id="SrD-Pc-WjU" customClass="PagingViewCell" customModule="Vruster">
-                                        <rect key="frame" x="-1" y="0.0" width="376" height="413"/>
+                                        <rect key="frame" x="-0.5" y="0.0" width="376" height="413"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="413"/>
@@ -383,6 +383,13 @@
                             <constraint firstItem="hWj-ap-xND" firstAttribute="top" secondItem="UbD-Gt-npw" secondAttribute="bottom" constant="51" id="zK6-uZ-nVQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="EmailField" destination="DhB-LA-bSM" id="Dxm-aQ-Wbd"/>
+                        <outlet property="FirstNameField" destination="giQ-cE-0Hh" id="tlw-Tx-8iP"/>
+                        <outlet property="LastNameField" destination="M6g-a3-v7C" id="t07-yd-8Px"/>
+                        <outlet property="PasswordField" destination="UuB-tD-ufj" id="7JD-aN-FQe"/>
+                        <outlet property="PhoneNumberField" destination="geV-Q1-BUI" id="Lea-0z-nkS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EcR-9b-in8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -574,7 +581,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GHd-DH-fxM">
-                                <rect key="frame" x="70" y="438" width="234" height="30"/>
+                                <rect key="frame" x="70" y="470.5" width="234" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5s-Rh-nWM">
                                         <rect key="frame" x="0.0" y="0.0" width="112" height="30"/>
@@ -618,7 +625,7 @@
                             <constraint firstAttribute="trailing" secondItem="41e-VL-EEy" secondAttribute="trailing" id="4MB-fL-os8"/>
                             <constraint firstItem="41e-VL-EEy" firstAttribute="top" secondItem="eY9-Ne-H4V" secondAttribute="top" id="4Ub-bd-To2"/>
                             <constraint firstItem="PzG-5e-aPY" firstAttribute="centerX" secondItem="eY9-Ne-H4V" secondAttribute="centerX" id="4qa-qc-mUJ"/>
-                            <constraint firstItem="GHd-DH-fxM" firstAttribute="top" secondItem="PzG-5e-aPY" secondAttribute="bottom" constant="60.5" id="7mc-fs-o2N"/>
+                            <constraint firstItem="GHd-DH-fxM" firstAttribute="top" secondItem="PzG-5e-aPY" secondAttribute="bottom" constant="93.5" id="7mc-fs-o2N"/>
                             <constraint firstItem="feh-6l-s9K" firstAttribute="centerX" secondItem="eY9-Ne-H4V" secondAttribute="centerX" id="971-hw-f1t"/>
                             <constraint firstItem="feh-6l-s9K" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eY9-Ne-H4V" secondAttribute="leadingMargin" constant="127" id="BEO-QA-wOZ"/>
                             <constraint firstItem="rLq-ul-FgU" firstAttribute="leading" secondItem="eY9-Ne-H4V" secondAttribute="leadingMargin" id="RT1-en-zAO"/>
@@ -632,10 +639,90 @@
                             <constraint firstItem="rLq-ul-FgU" firstAttribute="trailing" secondItem="eY9-Ne-H4V" secondAttribute="trailingMargin" id="y1C-Gv-FHS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Address1Field" destination="F6q-sh-mqW" id="YKn-nP-5K8"/>
+                        <outlet property="Address2Field" destination="1fi-ip-eYp" id="9V6-mG-SUD"/>
+                        <outlet property="CountryField" destination="e3p-4z-T34" id="nYa-cA-pm9"/>
+                        <outlet property="TownField" destination="NoY-Bc-TzB" id="1Pb-Xp-hpG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cH-9g-UEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2572" y="118.29085457271366"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="xlV-IB-KKZ">
+            <objects>
+                <viewController id="X2x-wY-lMJ" customClass="HomeVC" customModule="Vruster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6wb-dc-ND7"/>
+                        <viewControllerLayoutGuide type="bottom" id="yxD-wC-qjT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nDj-sU-qW6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vJp-SW-doV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="7bH-P9-Oet"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BkV-jZ-r6O">
+                                    <size key="itemSize" width="135" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NavCell" id="ejv-5D-GOU" customClass="PageCollectionViewCell" customModule="Vruster" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="135" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="X2x-wY-lMJ" id="qTP-ls-i8I"/>
+                                    <outlet property="delegate" destination="X2x-wY-lMJ" id="vj8-Fs-sjY"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vJp-SW-doV" firstAttribute="leading" secondItem="nDj-sU-qW6" secondAttribute="leading" id="910-tw-IAE"/>
+                            <constraint firstAttribute="trailing" secondItem="vJp-SW-doV" secondAttribute="trailing" id="khJ-ci-ebu"/>
+                            <constraint firstItem="vJp-SW-doV" firstAttribute="top" secondItem="nDj-sU-qW6" secondAttribute="top" id="urk-Wa-Kvp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yBP-V6-f4k"/>
+                    <connections>
+                        <outlet property="NavCollectionView" destination="vJp-SW-doV" id="jte-3q-MqH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ldm-cM-7z1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4368.8000000000002" y="118.29085457271366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L5C-yX-Hga">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Use-UN-J0y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sFh-DN-ZSi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X2x-wY-lMJ" kind="relationship" relationship="rootViewController" id="1zH-41-qaa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUs-ly-DgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3676" y="118.29085457271366"/>
         </scene>
     </scenes>
     <resources>

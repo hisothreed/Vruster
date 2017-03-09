@@ -8,19 +8,48 @@
 
 import UIKit
 
-class AddressInfoVC: UIViewController {
+class AddressInfoVC: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet var Address1Field: UITextField!
+    @IBOutlet var Address2Field: UITextField!
+    @IBOutlet var TownField: UITextField!
+    @IBOutlet var CountryField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        setupUI()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func setupUI() {
+        
+        CountryField.delegate = self
+        TownField.delegate = self
+        Address2Field.delegate = self
+        Address1Field.delegate = self
+        
+        
     }
     
+    
+    //// text field delegation
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        CountryField.resignFirstResponder()
+        TownField.resignFirstResponder()
+        Address2Field.resignFirstResponder()
+        Address1Field.resignFirstResponder()
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        CountryField.resignFirstResponder()
+        TownField.resignFirstResponder()
+        Address2Field.resignFirstResponder()
+        Address1Field.resignFirstResponder()
+        super.touchesBegan(touches, with: event)
+    }
+
 
     /*
     // MARK: - Navigation

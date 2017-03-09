@@ -15,6 +15,8 @@
 		9E210AED1E45D501007A0B25 /* VrusterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AEC1E45D501007A0B25 /* VrusterTests.swift */; };
 		9E210AF81E45D501007A0B25 /* VrusterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AF71E45D501007A0B25 /* VrusterUITests.swift */; };
 		9E210B081E45D615007A0B25 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210B071E45D615007A0B25 /* WelcomeViewController.swift */; };
+		9E6ED9631E71F0590086836A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6ED9621E71F0590086836A /* HomeVC.swift */; };
+		9E6ED9651E7208810086836A /* NavigationCel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6ED9641E7208810086836A /* NavigationCel.swift */; };
 		9E7517411E6B3CBD0061033E /* FlowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7517401E6B3CBD0061033E /* FlowView.xib */; };
 		9E7517451E6B3D020061033E /* SecondFlowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7517441E6B3D020061033E /* SecondFlowView.xib */; };
 		9E7517491E6B4CC80061033E /* firstFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7517481E6B4CC80061033E /* firstFlowView.swift */; };
@@ -58,6 +60,8 @@
 		9E210AF71E45D501007A0B25 /* VrusterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrusterUITests.swift; sourceTree = "<group>"; };
 		9E210AF91E45D501007A0B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E210B071E45D615007A0B25 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		9E6ED9621E71F0590086836A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		9E6ED9641E7208810086836A /* NavigationCel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCel.swift; sourceTree = "<group>"; };
 		9E7517401E6B3CBD0061033E /* FlowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlowView.xib; sourceTree = "<group>"; };
 		9E7517441E6B3D020061033E /* SecondFlowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondFlowView.xib; sourceTree = "<group>"; };
 		9E7517481E6B4CC80061033E /* firstFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstFlowView.swift; sourceTree = "<group>"; };
@@ -165,9 +169,34 @@
 			name = FlowCollectionViews;
 			sourceTree = "<group>";
 		};
+		9E6ED9591E71EE4D0086836A /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				9E6ED95E1E71EE890086836A /* PagesBarViews */,
+			);
+			name = HomeViews;
+			sourceTree = "<group>";
+		};
+		9E6ED95E1E71EE890086836A /* PagesBarViews */ = {
+			isa = PBXGroup;
+			children = (
+				9E6ED9641E7208810086836A /* NavigationCel.swift */,
+			);
+			name = PagesBarViews;
+			sourceTree = "<group>";
+		};
+		9E6ED9611E71F0410086836A /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				9E6ED9621E71F0590086836A /* HomeVC.swift */,
+			);
+			name = HomePage;
+			sourceTree = "<group>";
+		};
 		9E75173F1E6B3C7E0061033E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9E6ED9591E71EE4D0086836A /* HomeViews */,
 				9E7517421E6B3CE20061033E /* GuestFlow */,
 			);
 			name = Views;
@@ -212,6 +241,7 @@
 		9EC35C5E1E46473B00666EB7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9E6ED9611E71F0410086836A /* HomePage */,
 				9E210B071E45D615007A0B25 /* WelcomeViewController.swift */,
 				9ECE207F1E709B310041CFB6 /* PersonalInfoVC.swift */,
 				9ECE20811E709BAC0041CFB6 /* AddressInfoVC.swift */,
@@ -384,10 +414,12 @@
 				9ECE20821E709BAC0041CFB6 /* AddressInfoVC.swift in Sources */,
 				9ECE20851E709EA90041CFB6 /* inputFieldsCustomV.swift in Sources */,
 				9EC35C611E46476C00666EB7 /* PagingViewCell.swift in Sources */,
+				9E6ED9651E7208810086836A /* NavigationCel.swift in Sources */,
 				9E210B081E45D615007A0B25 /* WelcomeViewController.swift in Sources */,
 				9ECE20881E70A38F0041CFB6 /* Extensions.swift in Sources */,
 				9E210AD51E45D500007A0B25 /* AppDelegate.swift in Sources */,
 				9ECE20801E709B310041CFB6 /* PersonalInfoVC.swift in Sources */,
+				9E6ED9631E71F0590086836A /* HomeVC.swift in Sources */,
 				9E210ADD1E45D501007A0B25 /* Vruster.xcdatamodeld in Sources */,
 				9E7517491E6B4CC80061033E /* firstFlowView.swift in Sources */,
 			);

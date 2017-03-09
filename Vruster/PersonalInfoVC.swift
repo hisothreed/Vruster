@@ -8,14 +8,56 @@
 
 import UIKit
 
-class PersonalInfoVC: UIViewController {
+class PersonalInfoVC: UIViewController, UITextFieldDelegate{
 
+    @IBOutlet var EmailField: UITextField!
+    @IBOutlet var FirstNameField: UITextField!
+    @IBOutlet var LastNameField: UITextField!
+    @IBOutlet var PasswordField: UITextField!
+    @IBOutlet var PhoneNumberField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupUI()
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 
+    func setupUI() {
+        
+        EmailField.delegate = self
+        FirstNameField.delegate = self
+        LastNameField.delegate = self
+        PasswordField.delegate = self
+        PhoneNumberField.delegate = self
+        
+        
+    }
+    
+    
+    //// text field delegation
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        EmailField.resignFirstResponder()
+        FirstNameField.resignFirstResponder()
+        LastNameField.resignFirstResponder()
+        PasswordField.resignFirstResponder()
+        PhoneNumberField.resignFirstResponder()
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        EmailField.resignFirstResponder()
+        FirstNameField.resignFirstResponder()
+        LastNameField.resignFirstResponder()
+        PasswordField.resignFirstResponder()
+        PhoneNumberField.resignFirstResponder()
+        super.touchesBegan(touches, with: event)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

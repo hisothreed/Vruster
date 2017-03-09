@@ -17,7 +17,7 @@ class PagingViewCell: UICollectionViewCell {
     override func awakeFromNib() {
     
         setUpUI()
-        
+
     }
     
     func setUpUI() {
