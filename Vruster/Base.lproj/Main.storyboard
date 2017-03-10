@@ -712,15 +712,23 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iU-Tl-V3w" customClass="HomeSectionsContainer" customModule="Vruster" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="107" width="375" height="560"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="vJp-SW-doV" firstAttribute="leading" secondItem="nDj-sU-qW6" secondAttribute="leading" id="910-tw-IAE"/>
+                            <constraint firstItem="2iU-Tl-V3w" firstAttribute="top" secondItem="l2q-dO-Xi7" secondAttribute="bottom" constant="1" id="9Yr-Hj-HoZ"/>
                             <constraint firstItem="l2q-dO-Xi7" firstAttribute="leading" secondItem="nDj-sU-qW6" secondAttribute="leading" id="LG2-7v-jMn"/>
                             <constraint firstItem="l2q-dO-Xi7" firstAttribute="top" secondItem="vJp-SW-doV" secondAttribute="bottom" id="LTW-ZO-tJc"/>
+                            <constraint firstAttribute="trailing" secondItem="2iU-Tl-V3w" secondAttribute="trailing" id="Rbh-tV-AW4"/>
                             <constraint firstAttribute="trailing" secondItem="vJp-SW-doV" secondAttribute="trailing" id="khJ-ci-ebu"/>
                             <constraint firstAttribute="trailing" secondItem="l2q-dO-Xi7" secondAttribute="trailing" id="muf-Ts-65D"/>
+                            <constraint firstItem="2iU-Tl-V3w" firstAttribute="leading" secondItem="nDj-sU-qW6" secondAttribute="leading" id="uaz-yR-7bG"/>
                             <constraint firstItem="vJp-SW-doV" firstAttribute="top" secondItem="nDj-sU-qW6" secondAttribute="top" id="urk-Wa-Kvp"/>
+                            <constraint firstItem="yxD-wC-qjT" firstAttribute="top" secondItem="2iU-Tl-V3w" secondAttribute="bottom" id="yqK-Fk-v5J"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yBP-V6-f4k"/>

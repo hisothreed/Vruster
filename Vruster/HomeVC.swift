@@ -13,7 +13,7 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
     @IBOutlet weak var  NavCollectionView: UICollectionView!
     @IBOutlet weak var  SecCollectionView: UICollectionView!
     var pageIds : [String] = ["Cart","Shopping","Scan"]
-    var sections : [String] = ["Best selling","Best Price","Stores"]
+    var sections : [String] = ["Best selling","Best Price","Stores","test"]
     var selectedRow : Int?
     var line : UIView?
     override func viewDidLoad() {
@@ -28,24 +28,30 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
     func setUpUI()  {
         selectedRow = 1
         ///// collectionView layout
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 0
-        layout.minimumInteritemSpacing = 0
+        let NavLayout = UICollectionViewFlowLayout()
+        NavLayout.scrollDirection = .horizontal
+        NavLayout.minimumLineSpacing = 0
+        NavLayout.minimumInteritemSpacing = 0
+       
         NavCollectionView.isPagingEnabled = false
         NavCollectionView.isScrollEnabled = true
         NavCollectionView.showsHorizontalScrollIndicator = false
-        NavCollectionView.collectionViewLayout = layout
+        NavCollectionView.collectionViewLayout = NavLayout
         NavCollectionView.delegate = self
         NavCollectionView.dataSource = self
         NavCollectionView.contentInset.left = -5
         NavCollectionView.register(NavigationCel.self, forCellWithReuseIdentifier: "NavCell")
         
         /////
+        let secLayout = UICollectionViewFlowLayout()
+        secLayout.scrollDirection = .horizontal
+        secLayout.minimumLineSpacing = 0
+        secLayout.minimumInteritemSpacing = 0
         SecCollectionView.isPagingEnabled = false
         SecCollectionView.isScrollEnabled = true
         SecCollectionView.showsHorizontalScrollIndicator = false
-        SecCollectionView.collectionViewLayout = layout
+        SecCollectionView.collectionViewLayout = secLayout
+        
         SecCollectionView.delegate = self
         SecCollectionView.dataSource = self
         SecCollectionView.register(SectionsCell.self, forCellWithReuseIdentifier: "SecCell")
@@ -59,7 +65,7 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         SecCollectionView.layer.masksToBounds = false
         //// line
         
-        let lineX = Int(SecCollectionView.frame.width) / sections.count
+        let lineX = Int(SecCollectionView.frame.width) / 3
         let lineY = SecCollectionView.frame.height
         line = UIView(frame: CGRect(x: lineX + 10, y: Int(lineY - 1), width: lineX - 20, height: 1))
         line?.backgroundColor = UIColor().getRGB(r: 234,g: 74,b: 74,alpha: 1.0)
@@ -116,7 +122,7 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
     
     func animateLine(x: CGFloat)  {
         
-        UIView.animate(withDuration: 0.5) {
+        UIView.animate(withDuration: 0.2) {
             
             self.line?.center.x = x
             

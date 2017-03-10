@@ -22,6 +22,11 @@
 		9E7517491E6B4CC80061033E /* firstFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7517481E6B4CC80061033E /* firstFlowView.swift */; };
 		9E75174B1E6B4CD60061033E /* secondFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E75174A1E6B4CD60061033E /* secondFlowView.swift */; };
 		9E9283501E733C3800558F77 /* SectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E92834F1E733C3800558F77 /* SectionsCell.swift */; };
+		9E9283521E73504700558F77 /* HomeSectionsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9283511E73504700558F77 /* HomeSectionsContainer.swift */; };
+		9E92835A1E73514B00558F77 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9283581E73514B00558F77 /* ProductCell.swift */; };
+		9E92835B1E73514B00558F77 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E9283591E73514B00558F77 /* ProductCell.xib */; };
+		9E92835F1E7356BB00558F77 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E92835D1E7356BB00558F77 /* ProductsVC.swift */; };
+		9E9283601E7356BB00558F77 /* ProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E92835E1E7356BB00558F77 /* ProductsVC.xib */; };
 		9EC35C611E46476C00666EB7 /* PagingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC35C601E46476C00666EB7 /* PagingViewCell.swift */; };
 		9ECE20801E709B310041CFB6 /* PersonalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECE207F1E709B310041CFB6 /* PersonalInfoVC.swift */; };
 		9ECE20821E709BAC0041CFB6 /* AddressInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECE20811E709BAC0041CFB6 /* AddressInfoVC.swift */; };
@@ -68,6 +73,11 @@
 		9E7517481E6B4CC80061033E /* firstFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstFlowView.swift; sourceTree = "<group>"; };
 		9E75174A1E6B4CD60061033E /* secondFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondFlowView.swift; sourceTree = "<group>"; };
 		9E92834F1E733C3800558F77 /* SectionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsCell.swift; sourceTree = "<group>"; };
+		9E9283511E73504700558F77 /* HomeSectionsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSectionsContainer.swift; sourceTree = "<group>"; };
+		9E9283581E73514B00558F77 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		9E9283591E73514B00558F77 /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		9E92835D1E7356BB00558F77 /* ProductsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
+		9E92835E1E7356BB00558F77 /* ProductsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsVC.xib; sourceTree = "<group>"; };
 		9EC35C601E46476C00666EB7 /* PagingViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingViewCell.swift; sourceTree = "<group>"; };
 		9ECE207F1E709B310041CFB6 /* PersonalInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoVC.swift; sourceTree = "<group>"; };
 		9ECE20811E709BAC0041CFB6 /* AddressInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressInfoVC.swift; sourceTree = "<group>"; };
@@ -174,7 +184,9 @@
 		9E6ED9591E71EE4D0086836A /* HomeViews */ = {
 			isa = PBXGroup;
 			children = (
+				9E9283511E73504700558F77 /* HomeSectionsContainer.swift */,
 				9E6ED95E1E71EE890086836A /* NavBarViews */,
+				9E92835C1E73514F00558F77 /* ProductTableViews */,
 			);
 			name = HomeViews;
 			sourceTree = "<group>";
@@ -192,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				9E6ED9621E71F0590086836A /* HomeVC.swift */,
+				9E9283571E7350E700558F77 /* SampleProductsTVC */,
 			);
 			name = HomePage;
 			sourceTree = "<group>";
@@ -249,6 +262,24 @@
 				9ECE20811E709BAC0041CFB6 /* AddressInfoVC.swift */,
 			);
 			name = "Guest Flow";
+			sourceTree = "<group>";
+		};
+		9E9283571E7350E700558F77 /* SampleProductsTVC */ = {
+			isa = PBXGroup;
+			children = (
+				9E92835D1E7356BB00558F77 /* ProductsVC.swift */,
+				9E92835E1E7356BB00558F77 /* ProductsVC.xib */,
+			);
+			name = SampleProductsTVC;
+			sourceTree = "<group>";
+		};
+		9E92835C1E73514F00558F77 /* ProductTableViews */ = {
+			isa = PBXGroup;
+			children = (
+				9E9283581E73514B00558F77 /* ProductCell.swift */,
+				9E9283591E73514B00558F77 /* ProductCell.xib */,
+			);
+			name = ProductTableViews;
 			sourceTree = "<group>";
 		};
 		9EC35C5E1E46473B00666EB7 /* ViewControllers */ = {
@@ -393,7 +424,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E7517451E6B3D020061033E /* SecondFlowView.xib in Resources */,
+				9E9283601E7356BB00558F77 /* ProductsVC.xib in Resources */,
 				9E7517411E6B3CBD0061033E /* FlowView.xib in Resources */,
+				9E92835B1E73514B00558F77 /* ProductCell.xib in Resources */,
 				9E210AE21E45D501007A0B25 /* LaunchScreen.storyboard in Resources */,
 				9E210ADF1E45D501007A0B25 /* Assets.xcassets in Resources */,
 				9E210ADA1E45D500007A0B25 /* Main.storyboard in Resources */,
@@ -429,10 +462,13 @@
 				9E210B081E45D615007A0B25 /* WelcomeViewController.swift in Sources */,
 				9ECE20881E70A38F0041CFB6 /* Extensions.swift in Sources */,
 				9E210AD51E45D500007A0B25 /* AppDelegate.swift in Sources */,
+				9E92835F1E7356BB00558F77 /* ProductsVC.swift in Sources */,
 				9ECE20801E709B310041CFB6 /* PersonalInfoVC.swift in Sources */,
 				9E6ED9631E71F0590086836A /* HomeVC.swift in Sources */,
 				9E210ADD1E45D501007A0B25 /* Vruster.xcdatamodeld in Sources */,
 				9E9283501E733C3800558F77 /* SectionsCell.swift in Sources */,
+				9E92835A1E73514B00558F77 /* ProductCell.swift in Sources */,
+				9E9283521E73504700558F77 /* HomeSectionsContainer.swift in Sources */,
 				9E7517491E6B4CC80061033E /* firstFlowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
