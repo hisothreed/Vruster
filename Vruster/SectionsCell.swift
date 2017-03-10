@@ -1,5 +1,5 @@
 //
-//  NavigationCel.swift
+//  SectionsCell.swift
 //  Vruster
 //
 //  Created by Hiso3D on 3/10/17.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-class NavigationCel: UICollectionViewCell {
+class SectionsCell: UICollectionViewCell {
+    
     
     var textToAdd : String?
     
-  
-    
     func setUpUI(selected : Bool) {
-    
         
         self.subviews[0].removeFromSuperview()
         let label : UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
@@ -28,20 +26,24 @@ class NavigationCel: UICollectionViewCell {
         addSubview(label)
         label.text = textToAdd
         label.textAlignment = .center
-        label.font = UIFont(name: "Avenir-Light", size: 20)
+        label.font = UIFont(name: "Avenir-Heavy", size: 13)
         
         if selected {
-        
-         label.textColor = UIColor().getRGB(r: 234,g: 74,b: 74,alpha: 0.7)
-        
+            
+            label.textColor = UIColor.black
+            
         }else{
-        
-         label.textColor = UIColor().getRGB(r: 209,g: 209,b: 209,alpha: 0.7)
-
-        
+            
+            label.textColor = UIColor().getRGB(r: 209,g: 209,b: 209,alpha: 0.7)
+            
+            
         }
-  
+     
+        
+        
+        
     }
+    
 
-
+    
 }
