@@ -40,7 +40,7 @@
                                         <rect key="frame" x="-0.5" y="0.0" width="376" height="413"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="377" height="413"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="413"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I9d-1d-Dj5">
@@ -735,6 +735,7 @@
                     <connections>
                         <outlet property="NavCollectionView" destination="vJp-SW-doV" id="jte-3q-MqH"/>
                         <outlet property="SecCollectionView" destination="l2q-dO-Xi7" id="S1E-Su-T8y"/>
+                        <outlet property="homeSectionsContainer" destination="2iU-Tl-V3w" id="9WC-yn-jsD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldm-cM-7z1" userLabel="First Responder" sceneMemberID="firstResponder"/>

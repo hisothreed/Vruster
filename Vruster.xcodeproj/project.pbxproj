@@ -185,8 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				9E9283511E73504700558F77 /* HomeSectionsContainer.swift */,
-				9E6ED95E1E71EE890086836A /* NavBarViews */,
 				9E92835C1E73514F00558F77 /* ProductTableViews */,
+				9E6ED95E1E71EE890086836A /* NavBarViews */,
 			);
 			name = HomeViews;
 			sourceTree = "<group>";

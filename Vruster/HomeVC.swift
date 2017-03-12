@@ -12,6 +12,7 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
 
     @IBOutlet weak var  NavCollectionView: UICollectionView!
     @IBOutlet weak var  SecCollectionView: UICollectionView!
+    @IBOutlet weak var homeSectionsContainer : UIView!
     var pageIds : [String] = ["Cart","Shopping","Scan"]
     var sections : [String] = ["Best selling","Best Price","Stores","test"]
     var selectedRow : Int?
@@ -70,7 +71,22 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         line = UIView(frame: CGRect(x: lineX + 10, y: Int(lineY - 1), width: lineX - 20, height: 1))
         line?.backgroundColor = UIColor().getRGB(r: 234,g: 74,b: 74,alpha: 1.0)
         SecCollectionView.addSubview(line!)
+        
+        addChilderView()
     }
+ 
+    
+    func addChilderView() {
+        
+        let tablevc = ProductsVC(nibName: "ProductsVC", bundle: nil)
+
+        self.addChildViewController(tablevc)
+        
+        homeSectionsContainer.addSubview(tablevc.view)
+        
+    }
+    
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -83,8 +99,10 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         } else {
         
             return sections.count
+            
         }
     }
+    
  
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
@@ -111,12 +129,12 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         if collectionView.tag == 1 {
         
            return CGSize(width: self.NavCollectionView.frame.width/3 + 20, height: self.NavCollectionView.frame.height)
+            
         }else{
         
             return CGSize(width: self.SecCollectionView.frame.width/3, height: self.SecCollectionView.frame.height)
 
         }
-        
         
     }
     

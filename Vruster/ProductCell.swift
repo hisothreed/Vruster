@@ -14,6 +14,9 @@ class ProductCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         self.backgroundColor = .red
+        
+        self.frame.size.width = 40
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

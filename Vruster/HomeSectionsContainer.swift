@@ -27,14 +27,7 @@ class HomeSectionsContainer: UIView {
     }
     
     func setUpUI() {
-    
-        
 
-        let table = ProductsVC(nibName: "ProductsVC", bundle: nil)
-        self.addSubview(table.view)
-        table.table.reloadData()
-
-        
         
     }
     
