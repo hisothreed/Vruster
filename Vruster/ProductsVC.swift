@@ -19,16 +19,42 @@ class ProductsVC: UIViewController, UITableViewDataSource,UITableViewDelegate {
         // Do any additional setup after loading the vie
         table.dataSource = self
         table.delegate = self
-        table.estimatedRowHeight = 100
-        table.frame.size.width = self.view.frame.size.width - 40
-        table.contentInset = UIEdgeInsets(top: 40, left: 0, bottom: 0, right: 0)
+        table.rowHeight = 60
         table.backgroundColor = UIColor().getRGB(r: 247, g: 247, b: 247, alpha: 1)
-        
+
+        table.sectionHeaderHeight = 40
         table.register(UINib.init(nibName: "ProductCell", bundle: nil), forCellReuseIdentifier: "ProductCell")
 
+        
+        
     }
+    
 
+    
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let headerView : UIView = UIView()
+        headerView.frame = CGRect(x: 20, y: 0, width: self.view.frame.width, height: 40)
+        let label : UILabel =  {
+        
+            let l = UILabel()
+            l.frame = headerView.frame
+            l.font = UIFont(name: "Avenir-Heavy", size: 10)
+            l.text = "Recommended For You"
+            
+            return l
+            
+        }()
+        
+        headerView.addSubview(label)
 
+        return headerView
+        
+    }
+    
+ 
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
@@ -37,7 +63,7 @@ class ProductsVC: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 1
+        return 5
         
     }
     
@@ -46,8 +72,7 @@ class ProductsVC: UIViewController, UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductCell
-        cell.contentView.frame.size.width = self.view.frame.width - 40
-        
+        cell.contentView.backgroundColor = UIColor().getRGB(r: 247, g: 247, b: 247, alpha: 1)
         return cell
         
     }

@@ -13,7 +13,7 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
     @IBOutlet weak var  NavCollectionView: UICollectionView!
     @IBOutlet weak var  SecCollectionView: UICollectionView!
     @IBOutlet weak var homeSectionsContainer : UIView!
-    var pageIds : [String] = ["Cart","Shopping","Scan"]
+    var pageIds : [String] = ["Shopping Cart","Shopping","Scan","Orders"]
     var sections : [String] = ["Best selling","Best Price","Stores","test"]
     var selectedRow : Int?
     var line : UIView?
@@ -40,7 +40,7 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         NavCollectionView.collectionViewLayout = NavLayout
         NavCollectionView.delegate = self
         NavCollectionView.dataSource = self
-        NavCollectionView.contentInset.left = -5
+        NavCollectionView.contentInset.left = 0
         NavCollectionView.register(NavigationCel.self, forCellWithReuseIdentifier: "NavCell")
         
         /////
@@ -109,13 +109,13 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         if collectionView.tag == 1 {
         
           selectedRow = indexPath.row
-          NavCollectionView.scrollToItem(at: indexPath, at: .right, animated: true)
+          NavCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
           NavCollectionView.reloadData()
-        
+
         }else {
         
          selectedRow = indexPath.row
-         SecCollectionView.scrollToItem(at: indexPath, at: .right, animated: true)
+         SecCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
          let x = SecCollectionView.cellForItem(at: indexPath)?.center.x
          animateLine(x: x!)
          SecCollectionView.reloadData()

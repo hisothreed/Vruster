@@ -13,9 +13,7 @@ class ProductCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.backgroundColor = .red
         
-        self.frame.size.width = 40
         
     }
 
