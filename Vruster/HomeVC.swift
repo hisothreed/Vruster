@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var  NavCollectionView: UICollectionView!
     @IBOutlet weak var  SecCollectionView: UICollectionView!
@@ -73,8 +73,23 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         SecCollectionView.addSubview(line!)
         
         addChilderView()
+        
+        
+        let gRecognizer = UIScreenEdgePanGestureRecognizer.init(target: self, action: #selector(handleSwip))
+        gRecognizer.edges = .left
+        gRecognizer.delegate = self
+        view.addGestureRecognizer(gRecognizer)
+        
+        
     }
  
+    
+    func handleSwip(gesture : UIScreenEdgePanGestureRecognizer) {
+    
+        let loaction = gesture.location(ofTouch: 0, in: self.view)
+        print(loaction)
+        
+    }
     
     func addChilderView() {
         
@@ -160,11 +175,11 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         
          if indexPath.row == selectedRow {
        
-         cell.setUpUI(selected: true)
+            cell.setUpUI(selected: true)
             
          }else if indexPath.row != selectedRow {
          
-          cell.setUpUI(selected: false)
+            cell.setUpUI(selected: false)
          
      
          }
