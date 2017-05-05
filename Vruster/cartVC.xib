@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="cartVC" customModule="Vruster" customModuleProvider="target">
+            <connections>
+                <outlet property="cartProductsCollectionView" destination="jAI-O1-Dw6" id="Sb9-Qc-PEr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="581"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60d-LJ-hhm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="581"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jAI-O1-Dw6">
+                            <rect key="frame" x="0.0" y="8" width="375" height="453"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="453" id="eog-ZF-9Cd"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ViL-eH-bQL">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woc-BL-jSg">
+                            <rect key="frame" x="8" y="488" width="359" height="54"/>
+                            <color key="backgroundColor" red="0.97866815330000001" green="0.33115354180000001" blue="0.32801324129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="Q1H-dM-CI1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                            <state key="normal" title="CheckOut">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Woc-BL-jSg" firstAttribute="leading" secondItem="60d-LJ-hhm" secondAttribute="leading" constant="8" id="4QH-cf-oNr"/>
+                        <constraint firstItem="jAI-O1-Dw6" firstAttribute="top" secondItem="60d-LJ-hhm" secondAttribute="topMargin" id="6qy-p3-JnR"/>
+                        <constraint firstItem="jAI-O1-Dw6" firstAttribute="centerX" secondItem="60d-LJ-hhm" secondAttribute="centerX" id="8DW-pO-mGe"/>
+                        <constraint firstItem="Woc-BL-jSg" firstAttribute="top" secondItem="jAI-O1-Dw6" secondAttribute="bottom" constant="27" id="IJZ-bn-yDI"/>
+                        <constraint firstAttribute="trailing" secondItem="Woc-BL-jSg" secondAttribute="trailing" constant="8" id="JvJ-af-Ncp"/>
+                        <constraint firstItem="jAI-O1-Dw6" firstAttribute="centerX" secondItem="Woc-BL-jSg" secondAttribute="centerX" id="U35-vf-O1K"/>
+                        <constraint firstAttribute="bottom" secondItem="jAI-O1-Dw6" secondAttribute="bottom" constant="120" id="W7w-pS-aSz"/>
+                        <constraint firstAttribute="height" constant="581" id="Xzl-fG-1j2"/>
+                        <constraint firstItem="jAI-O1-Dw6" firstAttribute="leading" secondItem="60d-LJ-hhm" secondAttribute="leading" id="kSv-GI-GIf"/>
+                        <constraint firstAttribute="trailing" secondItem="jAI-O1-Dw6" secondAttribute="trailing" id="yGn-Qn-FcW"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="60d-LJ-hhm" secondAttribute="trailing" id="2pF-8n-fpr"/>
+                <constraint firstAttribute="bottom" secondItem="60d-LJ-hhm" secondAttribute="bottom" id="MxC-VX-VrW"/>
+                <constraint firstItem="60d-LJ-hhm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XmY-gp-Qwz"/>
+                <constraint firstItem="60d-LJ-hhm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ga1-eg-Vbd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="9.5" y="27.5"/>
+        </view>
+    </objects>
+</document>

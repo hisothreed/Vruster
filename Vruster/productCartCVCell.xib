@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="cartVC" customModule="Vruster" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productCell" id="gTV-IL-0wX" customClass="productCartCVCell" customModule="Vruster" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QXi-K9-I9d">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="113"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFN-Pb-18S">
+                        <rect key="frame" x="0.0" y="113" width="100" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncQ-ui-rVk">
+                        <rect key="frame" x="0.0" y="129" width="100" height="11"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iFN-Pb-18S" secondAttribute="trailing" id="8wR-nO-j67"/>
+                <constraint firstItem="iFN-Pb-18S" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Akf-pF-gAC"/>
+                <constraint firstItem="ncQ-ui-rVk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Jkc-0B-Tx5"/>
+                <constraint firstItem="iFN-Pb-18S" firstAttribute="top" secondItem="QXi-K9-I9d" secondAttribute="bottom" id="KA7-uq-u8x"/>
+                <constraint firstAttribute="trailing" secondItem="ncQ-ui-rVk" secondAttribute="trailing" id="Kut-Xq-6TA"/>
+                <constraint firstItem="QXi-K9-I9d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OL4-O9-gYe"/>
+                <constraint firstAttribute="trailing" secondItem="QXi-K9-I9d" secondAttribute="trailing" id="QVN-Tv-ehi"/>
+                <constraint firstItem="QXi-K9-I9d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="arD-Ew-Rza"/>
+                <constraint firstItem="ncQ-ui-rVk" firstAttribute="top" secondItem="iFN-Pb-18S" secondAttribute="bottom" id="blU-k5-LK8"/>
+                <constraint firstAttribute="bottom" secondItem="ncQ-ui-rVk" secondAttribute="bottom" id="viD-AV-LAH"/>
+            </constraints>
+            <size key="customSize" width="102" height="118"/>
+            <point key="canvasLocation" x="61" y="88"/>
+        </collectionViewCell>
+    </objects>
+</document>

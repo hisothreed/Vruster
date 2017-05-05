@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="sideView" customModule="Vruster" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="243" height="623"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Search" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n2u-j7-AtG">
+                    <rect key="frame" x="8" y="28" width="227" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="CDR-OR-s61"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="USJ-t6-ZBk">
+                    <rect key="frame" x="8" y="63" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="E8d-BL-qcx"/>
+                        <constraint firstAttribute="width" constant="70" id="Pyx-VH-zKr"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Name IN here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv0-sS-M6y">
+                    <rect key="frame" x="83" y="63" width="152" height="23.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.76793962717056274" green="0.35840517282485962" blue="0.32706600427627563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email@Domail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFI-ag-MjA">
+                    <rect key="frame" x="83" y="91.5" width="152" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F0N-A1-vgA">
+                    <rect key="frame" x="0.0" y="162" width="243" height="461"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.086234845221042633" green="0.086131222546100616" blue="0.09441152960062027" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="n2u-j7-AtG" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="01B-sj-DHQ"/>
+                <constraint firstItem="USJ-t6-ZBk" firstAttribute="top" secondItem="n2u-j7-AtG" secondAttribute="bottom" constant="5" id="3fh-Hb-IQJ"/>
+                <constraint firstAttribute="trailing" secondItem="F0N-A1-vgA" secondAttribute="trailing" id="JAo-R2-57i"/>
+                <constraint firstItem="uFI-ag-MjA" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="KK1-lb-jdE"/>
+                <constraint firstItem="Fv0-sS-M6y" firstAttribute="top" secondItem="n2u-j7-AtG" secondAttribute="bottom" constant="5" id="TMa-sK-2qp"/>
+                <constraint firstItem="n2u-j7-AtG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="UxY-xQ-zLQ"/>
+                <constraint firstItem="F0N-A1-vgA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aZV-P8-GEb"/>
+                <constraint firstItem="Fv0-sS-M6y" firstAttribute="leading" secondItem="USJ-t6-ZBk" secondAttribute="trailing" constant="5" id="be6-p0-cMc"/>
+                <constraint firstItem="uFI-ag-MjA" firstAttribute="top" secondItem="Fv0-sS-M6y" secondAttribute="bottom" constant="5" id="brq-v0-xxr"/>
+                <constraint firstItem="uFI-ag-MjA" firstAttribute="leading" secondItem="USJ-t6-ZBk" secondAttribute="trailing" constant="5" id="d5g-Ou-xqf"/>
+                <constraint firstItem="Fv0-sS-M6y" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="k4a-rT-hu1"/>
+                <constraint firstItem="n2u-j7-AtG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="20" id="kV3-i7-6yB"/>
+                <constraint firstAttribute="bottom" secondItem="F0N-A1-vgA" secondAttribute="bottom" id="nzZ-wp-vLy"/>
+                <constraint firstItem="USJ-t6-ZBk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="o3A-PC-jgP"/>
+                <constraint firstItem="uFI-ag-MjA" firstAttribute="centerY" secondItem="USJ-t6-ZBk" secondAttribute="centerY" id="qgD-Sv-WII"/>
+                <constraint firstItem="F0N-A1-vgA" firstAttribute="top" secondItem="USJ-t6-ZBk" secondAttribute="bottom" constant="29" id="wt0-pf-IVg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="optionsTabel" destination="F0N-A1-vgA" id="mRY-no-Beg"/>
+                <outlet property="searchField" destination="n2u-j7-AtG" id="Cav-GY-Exv"/>
+                <outlet property="userImage" destination="USJ-t6-ZBk" id="nzn-dj-s6I"/>
+                <outlet property="userMail" destination="uFI-ag-MjA" id="Nii-fJ-kgc"/>
+                <outlet property="userName" destination="Fv0-sS-M6y" id="g8a-0E-dFh"/>
+            </connections>
+            <point key="canvasLocation" x="-31.5" y="32.5"/>
+        </view>
+    </objects>
+</document>

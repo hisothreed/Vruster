@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FD699F10AF76FF0015E69F6 /* Pods_Vruster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A516BBED313842EFB80B4E /* Pods_Vruster.framework */; };
+		1CF19031C6B5CEFCF4799A7C /* Pods_VrusterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC2FCE3C40CEE572DEEB791 /* Pods_VrusterUITests.framework */; };
+		7D72E40C1440A952D4BB33D8 /* Pods_VrusterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FE70233274EAC3F13B8372 /* Pods_VrusterTests.framework */; };
 		9E210AD51E45D500007A0B25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AD41E45D500007A0B25 /* AppDelegate.swift */; };
 		9E210ADA1E45D500007A0B25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E210AD81E45D500007A0B25 /* Main.storyboard */; };
 		9E210ADD1E45D501007A0B25 /* Vruster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E210ADB1E45D500007A0B25 /* Vruster.xcdatamodeld */; };
@@ -15,6 +18,10 @@
 		9E210AED1E45D501007A0B25 /* VrusterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AEC1E45D501007A0B25 /* VrusterTests.swift */; };
 		9E210AF81E45D501007A0B25 /* VrusterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AF71E45D501007A0B25 /* VrusterUITests.swift */; };
 		9E210B081E45D615007A0B25 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210B071E45D615007A0B25 /* WelcomeViewController.swift */; };
+		9E5CC4B31EB518AC00C30A7D /* cartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5CC4B11EB518AC00C30A7D /* cartVC.swift */; };
+		9E5CC4B41EB518AC00C30A7D /* cartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5CC4B21EB518AC00C30A7D /* cartVC.xib */; };
+		9E5CC4B81EB51F0900C30A7D /* productCartCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5CC4B61EB51F0900C30A7D /* productCartCVCell.swift */; };
+		9E5CC4B91EB51F0900C30A7D /* productCartCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5CC4B71EB51F0900C30A7D /* productCartCVCell.xib */; };
 		9E6ED9631E71F0590086836A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6ED9621E71F0590086836A /* HomeVC.swift */; };
 		9E6ED9651E7208810086836A /* NavigationCel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6ED9641E7208810086836A /* NavigationCel.swift */; };
 		9E7517411E6B3CBD0061033E /* FlowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7517401E6B3CBD0061033E /* FlowView.xib */; };
@@ -27,6 +34,8 @@
 		9E92835B1E73514B00558F77 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E9283591E73514B00558F77 /* ProductCell.xib */; };
 		9E92835F1E7356BB00558F77 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E92835D1E7356BB00558F77 /* ProductsVC.swift */; };
 		9E9283601E7356BB00558F77 /* ProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E92835E1E7356BB00558F77 /* ProductsVC.xib */; };
+		9E9BE7BE1EB3CF570088C54A /* sideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E9BE7BD1EB3CF570088C54A /* sideView.xib */; };
+		9E9BE7C01EB3D0EB0088C54A /* sideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9BE7BF1EB3D0EB0088C54A /* sideView.swift */; };
 		9EC35C611E46476C00666EB7 /* PagingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC35C601E46476C00666EB7 /* PagingViewCell.swift */; };
 		9ECE20801E709B310041CFB6 /* PersonalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECE207F1E709B310041CFB6 /* PersonalInfoVC.swift */; };
 		9ECE20821E709BAC0041CFB6 /* AddressInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECE20811E709BAC0041CFB6 /* AddressInfoVC.swift */; };
@@ -52,6 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3738910CF6208CB3C5AE7D4C /* Pods-VrusterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VrusterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VrusterTests/Pods-VrusterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E15CB3726E6CE1379C30BA9 /* Pods-Vruster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vruster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vruster/Pods-Vruster.debug.xcconfig"; sourceTree = "<group>"; };
+		63FE70233274EAC3F13B8372 /* Pods_VrusterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VrusterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC2FCE3C40CEE572DEEB791 /* Pods_VrusterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VrusterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E210AD11E45D500007A0B25 /* Vruster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vruster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E210AD41E45D500007A0B25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E210AD91E45D500007A0B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +79,10 @@
 		9E210AF71E45D501007A0B25 /* VrusterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrusterUITests.swift; sourceTree = "<group>"; };
 		9E210AF91E45D501007A0B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E210B071E45D615007A0B25 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		9E5CC4B11EB518AC00C30A7D /* cartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cartVC.swift; sourceTree = "<group>"; };
+		9E5CC4B21EB518AC00C30A7D /* cartVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cartVC.xib; sourceTree = "<group>"; };
+		9E5CC4B61EB51F0900C30A7D /* productCartCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productCartCVCell.swift; sourceTree = "<group>"; };
+		9E5CC4B71EB51F0900C30A7D /* productCartCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = productCartCVCell.xib; sourceTree = "<group>"; };
 		9E6ED9621E71F0590086836A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9E6ED9641E7208810086836A /* NavigationCel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCel.swift; sourceTree = "<group>"; };
 		9E7517401E6B3CBD0061033E /* FlowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlowView.xib; sourceTree = "<group>"; };
@@ -78,11 +95,18 @@
 		9E9283591E73514B00558F77 /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		9E92835D1E7356BB00558F77 /* ProductsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		9E92835E1E7356BB00558F77 /* ProductsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsVC.xib; sourceTree = "<group>"; };
+		9E9BE7BD1EB3CF570088C54A /* sideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = sideView.xib; sourceTree = "<group>"; };
+		9E9BE7BF1EB3D0EB0088C54A /* sideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideView.swift; sourceTree = "<group>"; };
 		9EC35C601E46476C00666EB7 /* PagingViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingViewCell.swift; sourceTree = "<group>"; };
 		9ECE207F1E709B310041CFB6 /* PersonalInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoVC.swift; sourceTree = "<group>"; };
 		9ECE20811E709BAC0041CFB6 /* AddressInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressInfoVC.swift; sourceTree = "<group>"; };
 		9ECE20841E709EA90041CFB6 /* inputFieldsCustomV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inputFieldsCustomV.swift; sourceTree = "<group>"; };
 		9ECE20871E70A38F0041CFB6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A9A516BBED313842EFB80B4E /* Pods_Vruster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vruster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA131AE47B7366FCD18C932 /* Pods-VrusterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VrusterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VrusterUITests/Pods-VrusterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCD0AA9F80552F468AA3D273 /* Pods-VrusterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VrusterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VrusterUITests/Pods-VrusterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA216F43F82A0948FA8428F5 /* Pods-VrusterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VrusterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VrusterTests/Pods-VrusterTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8614076F10EB1F0B4D1EF94 /* Pods-Vruster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vruster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vruster/Pods-Vruster.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD699F10AF76FF0015E69F6 /* Pods_Vruster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D72E40C1440A952D4BB33D8 /* Pods_VrusterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +130,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CF19031C6B5CEFCF4799A7C /* Pods_VrusterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5934E0E352E2DBBE0664FC9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9A516BBED313842EFB80B4E /* Pods_Vruster.framework */,
+				63FE70233274EAC3F13B8372 /* Pods_VrusterTests.framework */,
+				7CC2FCE3C40CEE572DEEB791 /* Pods_VrusterUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9E210AC81E45D500007A0B25 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +154,8 @@
 				9E210AEB1E45D501007A0B25 /* VrusterTests */,
 				9E210AF61E45D501007A0B25 /* VrusterUITests */,
 				9E210AD21E45D500007A0B25 /* Products */,
+				C89B2403327B72D5AFA331DF /* Pods */,
+				5934E0E352E2DBBE0664FC9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +212,17 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		9E5CC4B51EB5190D00C30A7D /* cartVC */ = {
+			isa = PBXGroup;
+			children = (
+				9E5CC4B11EB518AC00C30A7D /* cartVC.swift */,
+				9E5CC4B21EB518AC00C30A7D /* cartVC.xib */,
+				9E5CC4B61EB51F0900C30A7D /* productCartCVCell.swift */,
+				9E5CC4B71EB51F0900C30A7D /* productCartCVCell.xib */,
+			);
+			name = cartVC;
+			sourceTree = "<group>";
+		};
 		9E6D8F241E6DE29B004FE7E6 /* FlowCollectionViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +237,8 @@
 				9E9283511E73504700558F77 /* HomeSectionsContainer.swift */,
 				9E92835C1E73514F00558F77 /* ProductTableViews */,
 				9E6ED95E1E71EE890086836A /* NavBarViews */,
+				9E9BE7BD1EB3CF570088C54A /* sideView.xib */,
+				9E9BE7BF1EB3D0EB0088C54A /* sideView.swift */,
 			);
 			name = HomeViews;
 			sourceTree = "<group>";
@@ -204,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				9E6ED9621E71F0590086836A /* HomeVC.swift */,
+				9E5CC4B51EB5190D00C30A7D /* cartVC */,
 				9E9283571E7350E700558F77 /* SampleProductsTVC */,
 			);
 			name = HomePage;
@@ -315,6 +368,19 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		C89B2403327B72D5AFA331DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E15CB3726E6CE1379C30BA9 /* Pods-Vruster.debug.xcconfig */,
+				F8614076F10EB1F0B4D1EF94 /* Pods-Vruster.release.xcconfig */,
+				3738910CF6208CB3C5AE7D4C /* Pods-VrusterTests.debug.xcconfig */,
+				CA216F43F82A0948FA8428F5 /* Pods-VrusterTests.release.xcconfig */,
+				BBA131AE47B7366FCD18C932 /* Pods-VrusterUITests.debug.xcconfig */,
+				BCD0AA9F80552F468AA3D273 /* Pods-VrusterUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,9 +388,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E210AFC1E45D501007A0B25 /* Build configuration list for PBXNativeTarget "Vruster" */;
 			buildPhases = (
+				94BE832F59443E2FD67C0CA7 /* [CP] Check Pods Manifest.lock */,
 				9E210ACD1E45D500007A0B25 /* Sources */,
 				9E210ACE1E45D500007A0B25 /* Frameworks */,
 				9E210ACF1E45D500007A0B25 /* Resources */,
+				614F7189D13812387EB21D13 /* [CP] Embed Pods Frameworks */,
+				BDED35ADA0B13224E3F3A558 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,9 +408,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E210AFF1E45D501007A0B25 /* Build configuration list for PBXNativeTarget "VrusterTests" */;
 			buildPhases = (
+				870F20D5DDB529BD23A70BBA /* [CP] Check Pods Manifest.lock */,
 				9E210AE41E45D501007A0B25 /* Sources */,
 				9E210AE51E45D501007A0B25 /* Frameworks */,
 				9E210AE61E45D501007A0B25 /* Resources */,
+				9982109CC3A7F45A6567351E /* [CP] Embed Pods Frameworks */,
+				A5D1B155DD846E277EA9B5AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -357,9 +429,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E210B021E45D501007A0B25 /* Build configuration list for PBXNativeTarget "VrusterUITests" */;
 			buildPhases = (
+				A5FE0F59EE1417E69B00C8A5 /* [CP] Check Pods Manifest.lock */,
 				9E210AEF1E45D501007A0B25 /* Sources */,
 				9E210AF01E45D501007A0B25 /* Frameworks */,
 				9E210AF11E45D501007A0B25 /* Resources */,
+				03D30D8F8090F1538ABCB7FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -426,8 +500,11 @@
 				9E7517451E6B3D020061033E /* SecondFlowView.xib in Resources */,
 				9E9283601E7356BB00558F77 /* ProductsVC.xib in Resources */,
 				9E7517411E6B3CBD0061033E /* FlowView.xib in Resources */,
+				9E5CC4B41EB518AC00C30A7D /* cartVC.xib in Resources */,
 				9E92835B1E73514B00558F77 /* ProductCell.xib in Resources */,
 				9E210AE21E45D501007A0B25 /* LaunchScreen.storyboard in Resources */,
+				9E5CC4B91EB51F0900C30A7D /* productCartCVCell.xib in Resources */,
+				9E9BE7BE1EB3CF570088C54A /* sideView.xib in Resources */,
 				9E210ADF1E45D501007A0B25 /* Assets.xcassets in Resources */,
 				9E210ADA1E45D500007A0B25 /* Main.storyboard in Resources */,
 			);
@@ -449,15 +526,141 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03D30D8F8090F1538ABCB7FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VrusterUITests/Pods-VrusterUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		614F7189D13812387EB21D13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vruster/Pods-Vruster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		870F20D5DDB529BD23A70BBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		94BE832F59443E2FD67C0CA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9982109CC3A7F45A6567351E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VrusterTests/Pods-VrusterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5D1B155DD846E277EA9B5AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VrusterTests/Pods-VrusterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5FE0F59EE1417E69B00C8A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDED35ADA0B13224E3F3A558 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vruster/Pods-Vruster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E210ACD1E45D500007A0B25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5CC4B31EB518AC00C30A7D /* cartVC.swift in Sources */,
 				9E75174B1E6B4CD60061033E /* secondFlowView.swift in Sources */,
 				9ECE20821E709BAC0041CFB6 /* AddressInfoVC.swift in Sources */,
 				9ECE20851E709EA90041CFB6 /* inputFieldsCustomV.swift in Sources */,
+				9E5CC4B81EB51F0900C30A7D /* productCartCVCell.swift in Sources */,
 				9EC35C611E46476C00666EB7 /* PagingViewCell.swift in Sources */,
+				9E9BE7C01EB3D0EB0088C54A /* sideView.swift in Sources */,
 				9E6ED9651E7208810086836A /* NavigationCel.swift in Sources */,
 				9E210B081E45D615007A0B25 /* WelcomeViewController.swift in Sources */,
 				9ECE20881E70A38F0041CFB6 /* Extensions.swift in Sources */,
@@ -617,6 +820,7 @@
 		};
 		9E210AFD1E45D501007A0B25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E15CB3726E6CE1379C30BA9 /* Pods-Vruster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FZFRKGPX25;
@@ -630,6 +834,7 @@
 		};
 		9E210AFE1E45D501007A0B25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8614076F10EB1F0B4D1EF94 /* Pods-Vruster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FZFRKGPX25;
@@ -643,6 +848,7 @@
 		};
 		9E210B001E45D501007A0B25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3738910CF6208CB3C5AE7D4C /* Pods-VrusterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -657,6 +863,7 @@
 		};
 		9E210B011E45D501007A0B25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA216F43F82A0948FA8428F5 /* Pods-VrusterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -671,6 +878,7 @@
 		};
 		9E210B031E45D501007A0B25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBA131AE47B7366FCD18C932 /* Pods-VrusterUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = VrusterUITests/Info.plist;
@@ -684,6 +892,7 @@
 		};
 		9E210B041E45D501007A0B25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD0AA9F80552F468AA3D273 /* Pods-VrusterUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = VrusterUITests/Info.plist;

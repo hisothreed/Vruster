@@ -24,27 +24,21 @@ class ProductsVC: UIViewController, UITableViewDataSource,UITableViewDelegate {
 
         table.sectionHeaderHeight = 40
         table.register(UINib.init(nibName: "ProductCell", bundle: nil), forCellReuseIdentifier: "ProductCell")
-
-        
-        
+			
     }
     
 
     
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
         let headerView : UIView = UIView()
         headerView.frame = CGRect(x: 20, y: 0, width: self.view.frame.width, height: 40)
         let label : UILabel =  {
-        
             let l = UILabel()
             l.frame = headerView.frame
             l.font = UIFont(name: "Avenir-Heavy", size: 10)
             l.text = "Recommended For You"
-            
             return l
-            
         }()
         
         headerView.addSubview(label)
