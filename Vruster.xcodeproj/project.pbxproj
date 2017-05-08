@@ -10,6 +10,10 @@
 		0FD699F10AF76FF0015E69F6 /* Pods_Vruster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A516BBED313842EFB80B4E /* Pods_Vruster.framework */; };
 		1CF19031C6B5CEFCF4799A7C /* Pods_VrusterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC2FCE3C40CEE572DEEB791 /* Pods_VrusterUITests.framework */; };
 		7D72E40C1440A952D4BB33D8 /* Pods_VrusterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FE70233274EAC3F13B8372 /* Pods_VrusterTests.framework */; };
+		9E06D0511EBD0081000872CA /* pastBuysVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06D04F1EBD0081000872CA /* pastBuysVC.swift */; };
+		9E06D0521EBD0081000872CA /* pastBuysVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E06D0501EBD0081000872CA /* pastBuysVC.xib */; };
+		9E06D0581EBD023F000872CA /* pastProductCartCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06D0561EBD023F000872CA /* pastProductCartCVCell.swift */; };
+		9E06D0591EBD023F000872CA /* pastProductCartCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E06D0571EBD023F000872CA /* pastProductCartCVCell.xib */; };
 		9E210AD51E45D500007A0B25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AD41E45D500007A0B25 /* AppDelegate.swift */; };
 		9E210ADA1E45D500007A0B25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E210AD81E45D500007A0B25 /* Main.storyboard */; };
 		9E210ADD1E45D501007A0B25 /* Vruster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E210ADB1E45D500007A0B25 /* Vruster.xcdatamodeld */; };
@@ -65,6 +69,10 @@
 		4E15CB3726E6CE1379C30BA9 /* Pods-Vruster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vruster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vruster/Pods-Vruster.debug.xcconfig"; sourceTree = "<group>"; };
 		63FE70233274EAC3F13B8372 /* Pods_VrusterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VrusterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC2FCE3C40CEE572DEEB791 /* Pods_VrusterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VrusterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E06D04F1EBD0081000872CA /* pastBuysVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pastBuysVC.swift; sourceTree = "<group>"; };
+		9E06D0501EBD0081000872CA /* pastBuysVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pastBuysVC.xib; sourceTree = "<group>"; };
+		9E06D0561EBD023F000872CA /* pastProductCartCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pastProductCartCVCell.swift; sourceTree = "<group>"; };
+		9E06D0571EBD023F000872CA /* pastProductCartCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pastProductCartCVCell.xib; sourceTree = "<group>"; };
 		9E210AD11E45D500007A0B25 /* Vruster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vruster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E210AD41E45D500007A0B25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E210AD91E45D500007A0B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,6 +153,17 @@
 				7CC2FCE3C40CEE572DEEB791 /* Pods_VrusterUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E06D0531EBD008B000872CA /* pastBuysVC */ = {
+			isa = PBXGroup;
+			children = (
+				9E06D0561EBD023F000872CA /* pastProductCartCVCell.swift */,
+				9E06D0571EBD023F000872CA /* pastProductCartCVCell.xib */,
+				9E06D04F1EBD0081000872CA /* pastBuysVC.swift */,
+				9E06D0501EBD0081000872CA /* pastBuysVC.xib */,
+			);
+			name = pastBuysVC;
 			sourceTree = "<group>";
 		};
 		9E210AC81E45D500007A0B25 = {
@@ -256,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				9E6ED9621E71F0590086836A /* HomeVC.swift */,
+				9E06D0531EBD008B000872CA /* pastBuysVC */,
 				9E5CC4B51EB5190D00C30A7D /* cartVC */,
 				9E9283571E7350E700558F77 /* SampleProductsTVC */,
 			);
@@ -503,10 +523,12 @@
 				9E5CC4B41EB518AC00C30A7D /* cartVC.xib in Resources */,
 				9E92835B1E73514B00558F77 /* ProductCell.xib in Resources */,
 				9E210AE21E45D501007A0B25 /* LaunchScreen.storyboard in Resources */,
+				9E06D0591EBD023F000872CA /* pastProductCartCVCell.xib in Resources */,
 				9E5CC4B91EB51F0900C30A7D /* productCartCVCell.xib in Resources */,
 				9E9BE7BE1EB3CF570088C54A /* sideView.xib in Resources */,
 				9E210ADF1E45D501007A0B25 /* Assets.xcassets in Resources */,
 				9E210ADA1E45D500007A0B25 /* Main.storyboard in Resources */,
+				9E06D0521EBD0081000872CA /* pastBuysVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,7 +687,9 @@
 				9E210B081E45D615007A0B25 /* WelcomeViewController.swift in Sources */,
 				9ECE20881E70A38F0041CFB6 /* Extensions.swift in Sources */,
 				9E210AD51E45D500007A0B25 /* AppDelegate.swift in Sources */,
+				9E06D0511EBD0081000872CA /* pastBuysVC.swift in Sources */,
 				9E92835F1E7356BB00558F77 /* ProductsVC.swift in Sources */,
+				9E06D0581EBD023F000872CA /* pastProductCartCVCell.swift in Sources */,
 				9ECE20801E709B310041CFB6 /* PersonalInfoVC.swift in Sources */,
 				9E6ED9631E71F0590086836A /* HomeVC.swift in Sources */,
 				9E210ADD1E45D501007A0B25 /* Vruster.xcdatamodeld in Sources */,

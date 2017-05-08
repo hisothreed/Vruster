@@ -96,11 +96,11 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         let view = Bundle.main.loadNibNamed(viewName, owner: self, options: nil)?[0] as! UIView
         view.frame = CGRect(x: -self.view.frame.width, y: 0, width: self.view.frame.width/1.5, height: self.view.frame.height)
         let observerView: UIView = {
-            let v = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
-            v.alpha = 0.4
-            v.backgroundColor = .black
-            v.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(handleDismiss)))
-            return v
+					let v = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+					v.alpha = 0.4
+					v.backgroundColor = .black
+					v.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(handleDismiss)))
+					return v
         }()
         self.sideView = view
         self.view.addSubview(observerView)
@@ -108,39 +108,47 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         return view
     }
     func handleDismiss(touch: UITapGestureRecognizer) {
-        animateSideView(view: self.sideView,toggle: false)
+			animateSideView(view: self.sideView,toggle: false)
     }
     func animateSideView(view: UIView,toggle: Bool)  {
-        if toggle {
-         let sideView = view
-         self.view.subviews[self.view.subviews.count-2].isHidden = true
-         UIView.animate(withDuration: 0.5) {
-             sideView.frame.origin.x = self.view.frame.origin.x
-             self.view.subviews[self.view.subviews.count-2].isHidden = false
-         }
-        }else{
-          let sideView = view
-         UIView.animate(withDuration: 0.5, animations: {
-            sideView.frame.origin.x = -self.view.frame.width
-            self.view.subviews[self.view.subviews.count-2].isHidden = true
-         }, completion: { (true) in
-            self.view.subviews.last?.removeFromSuperview()
-            self.view.subviews.last?.removeFromSuperview()
-         })
-       } 
-        
+			if toggle {
+			 let sideView = view
+			 self.view.subviews[self.view.subviews.count-2].isHidden = true
+			 UIView.animate(withDuration: 0.5) {
+					 sideView.frame.origin.x = self.view.frame.origin.x
+					 self.view.subviews[self.view.subviews.count-2].isHidden = false
+			 }
+			}else{
+			 let sideView = view
+			 UIView.animate(withDuration: 0.5, animations: {
+					sideView.frame.origin.x = -self.view.frame.width
+					self.view.subviews[self.view.subviews.count-2].isHidden = true
+			 }, completion: { (true) in
+					self.view.subviews.last?.removeFromSuperview()
+					self.view.subviews.last?.removeFromSuperview()
+			 })
+		 }
+			
     }
     func addChilderView() {
 			homeSectionsContainer.subviews.last?.removeFromSuperview()
 			if selectedRow == 0 {
 				let cartViewC = cartVC(nibName: "cartVC", bundle: nil)
+				SecCollectionView.isHidden = true
 				self.addChildViewController(cartViewC)
 				homeSectionsContainer.addSubview(cartViewC.view)
 			}
 			if selectedRow == 1 {
-				let tablevc = ProductsVC(nibName: "ProductsVC", bundle: nil)
-				self.addChildViewController(tablevc)
-				homeSectionsContainer.addSubview(tablevc.view)
+				let productsVC = ProductsVC(nibName: "ProductsVC", bundle: nil)
+				SecCollectionView.isHidden = false
+				self.addChildViewController(productsVC)
+				homeSectionsContainer.addSubview(productsVC.view)
+			}
+			if selectedRow == 3 {
+				let pastBuys = pastBuysVC(nibName: "pastBuysVC", bundle: nil)
+				SecCollectionView.isHidden = true
+				self.addChildViewController(pastBuys)
+				homeSectionsContainer.addSubview(pastBuys.view)
 			}
 			
     }
@@ -177,9 +185,8 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView.tag == 1 {
            return CGSize(width: self.NavCollectionView.frame.width/3 + 20, height: self.NavCollectionView.frame.height)
-            
         }else{
-            return CGSize(width: self.SecCollectionView.frame.width/3, height: self.SecCollectionView.frame.height)
+					 return CGSize(width: self.SecCollectionView.frame.width/3, height: self.SecCollectionView.frame.height)
         }
     }
     func animateLine(x: CGFloat)  {
@@ -200,14 +207,14 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
          }
          return cell
         }else{
-            let cell = SecCollectionView.dequeueReusableCell(withReuseIdentifier: "SecCell", for: indexPath) as! SectionsCell
-            cell.textToAdd = nil
-            cell.textToAdd = sections[indexPath.row]
-            if indexPath.row == selectedRow {
-                cell.setUpUI(selected: true)
-            }else if indexPath.row != selectedRow {
-                cell.setUpUI(selected: false)
-            }
+           let cell = SecCollectionView.dequeueReusableCell(withReuseIdentifier: "SecCell", for: indexPath) as! SectionsCell
+           cell.textToAdd = nil
+           cell.textToAdd = sections[indexPath.row]
+					 if indexPath.row == selectedRow {
+							cell.setUpUI(selected: true)
+					}else if indexPath.row != selectedRow {
+							cell.setUpUI(selected: false)
+					}
             return cell
         }
     }

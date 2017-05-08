@@ -17,6 +17,7 @@ class cartVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         // Do any additional setup after loading the view.
 			cartProductsCollectionView?.delegate = self
 			cartProductsCollectionView?.dataSource = self
+
 			self.cartProductsCollectionView?.register(UINib(nibName: "productCartCVCell", bundle: nil), forCellWithReuseIdentifier: "productCell")
     }
 
@@ -26,21 +27,20 @@ class cartVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
     }
     
 
-	func numberOfSections(in collectionView: UICollectionView) -> Int {
-		return 1
-	}
+		func numberOfSections(in collectionView: UICollectionView) -> Int {
+			return 1
+		}
 
-	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 5
-	}
-	
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		return CGSize(width: 70, height: 70)
-	}
-	
-	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell :productCartCVCell = collectionView.dequeueReusableCell(withReuseIdentifier: "productCell", for: indexPath) as! productCartCVCell
-		cell.backgroundColor = .red
-		return cell
-	}
+		func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+			return 5
+		}
+		
+		func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+				return CGSize(width: 100, height: 140)
+		}
+		
+		func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+			let cell :productCartCVCell = collectionView.dequeueReusableCell(withReuseIdentifier: "productCell", for: indexPath) as! productCartCVCell
+			return cell
+		}
 }
