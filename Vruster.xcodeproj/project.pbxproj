@@ -14,6 +14,7 @@
 		9E06D0521EBD0081000872CA /* pastBuysVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E06D0501EBD0081000872CA /* pastBuysVC.xib */; };
 		9E06D0581EBD023F000872CA /* pastProductCartCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06D0561EBD023F000872CA /* pastProductCartCVCell.swift */; };
 		9E06D0591EBD023F000872CA /* pastProductCartCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E06D0571EBD023F000872CA /* pastProductCartCVCell.xib */; };
+		9E13CEB81EDAD55F0093E3FE /* sideViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E13CEB71EDAD55F0093E3FE /* sideViewTableCell.swift */; };
 		9E210AD51E45D500007A0B25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E210AD41E45D500007A0B25 /* AppDelegate.swift */; };
 		9E210ADA1E45D500007A0B25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E210AD81E45D500007A0B25 /* Main.storyboard */; };
 		9E210ADD1E45D501007A0B25 /* Vruster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E210ADB1E45D500007A0B25 /* Vruster.xcdatamodeld */; };
@@ -73,6 +74,7 @@
 		9E06D0501EBD0081000872CA /* pastBuysVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pastBuysVC.xib; sourceTree = "<group>"; };
 		9E06D0561EBD023F000872CA /* pastProductCartCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pastProductCartCVCell.swift; sourceTree = "<group>"; };
 		9E06D0571EBD023F000872CA /* pastProductCartCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pastProductCartCVCell.xib; sourceTree = "<group>"; };
+		9E13CEB71EDAD55F0093E3FE /* sideViewTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideViewTableCell.swift; sourceTree = "<group>"; };
 		9E210AD11E45D500007A0B25 /* Vruster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vruster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E210AD41E45D500007A0B25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E210AD91E45D500007A0B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,6 +168,16 @@
 			name = pastBuysVC;
 			sourceTree = "<group>";
 		};
+		9E13CEB61EDAD4140093E3FE /* sideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9E9BE7BD1EB3CF570088C54A /* sideView.xib */,
+				9E13CEB71EDAD55F0093E3FE /* sideViewTableCell.swift */,
+				9E9BE7BF1EB3D0EB0088C54A /* sideView.swift */,
+			);
+			name = sideMenu;
+			sourceTree = "<group>";
+		};
 		9E210AC81E45D500007A0B25 = {
 			isa = PBXGroup;
 			children = (
@@ -256,8 +268,7 @@
 				9E9283511E73504700558F77 /* HomeSectionsContainer.swift */,
 				9E92835C1E73514F00558F77 /* ProductTableViews */,
 				9E6ED95E1E71EE890086836A /* NavBarViews */,
-				9E9BE7BD1EB3CF570088C54A /* sideView.xib */,
-				9E9BE7BF1EB3D0EB0088C54A /* sideView.swift */,
+				9E13CEB61EDAD4140093E3FE /* sideMenu */,
 			);
 			name = HomeViews;
 			sourceTree = "<group>";
@@ -454,6 +465,7 @@
 				9E210AF01E45D501007A0B25 /* Frameworks */,
 				9E210AF11E45D501007A0B25 /* Resources */,
 				03D30D8F8090F1538ABCB7FB /* [CP] Copy Pods Resources */,
+				CC7410574AD9C991EA0665D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -591,7 +603,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		94BE832F59443E2FD67C0CA7 /* [CP] Check Pods Manifest.lock */ = {
@@ -606,7 +618,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9982109CC3A7F45A6567351E /* [CP] Embed Pods Frameworks */ = {
@@ -651,7 +663,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BDED35ADA0B13224E3F3A558 /* [CP] Copy Pods Resources */ = {
@@ -669,6 +681,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vruster/Pods-Vruster-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CC7410574AD9C991EA0665D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VrusterUITests/Pods-VrusterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -678,6 +705,7 @@
 			files = (
 				9E5CC4B31EB518AC00C30A7D /* cartVC.swift in Sources */,
 				9E75174B1E6B4CD60061033E /* secondFlowView.swift in Sources */,
+				9E13CEB81EDAD55F0093E3FE /* sideViewTableCell.swift in Sources */,
 				9ECE20821E709BAC0041CFB6 /* AddressInfoVC.swift in Sources */,
 				9ECE20851E709EA90041CFB6 /* inputFieldsCustomV.swift in Sources */,
 				9E5CC4B81EB51F0900C30A7D /* productCartCVCell.swift in Sources */,
@@ -847,11 +875,13 @@
 			baseConfigurationReference = 4E15CB3726E6CE1379C30BA9 /* Pods-Vruster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = FZFRKGPX25;
 				INFOPLIST_FILE = Vruster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hiso3D.Vruster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -861,11 +891,13 @@
 			baseConfigurationReference = F8614076F10EB1F0B4D1EF94 /* Pods-Vruster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = FZFRKGPX25;
 				INFOPLIST_FILE = Vruster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hiso3D.Vruster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

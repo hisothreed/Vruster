@@ -1,4 +1,4 @@
-//
+//  
 //  HomeVC.swift
 //  Vruster
 //
@@ -14,7 +14,7 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
     @IBOutlet weak var  SecCollectionView: UICollectionView!
     @IBOutlet weak var homeSectionsContainer : UIView!
     var pageIds : [String] = ["Shopping Cart","Shopping","Scan","Past Orders"]
-    var sections : [String] = ["Best selling","Best Price","Stores"]
+    var sections : [String] = ["Best selling","Best Price","Stores","Scan"]
     var selectedRow : Int?
     var line : UIView?
     var sideMenuObserver : Bool = false
@@ -96,9 +96,9 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         let view = Bundle.main.loadNibNamed(viewName, owner: self, options: nil)?[0] as! UIView
         view.frame = CGRect(x: -self.view.frame.width, y: 0, width: self.view.frame.width/1.5, height: self.view.frame.height)
         let observerView: UIView = {
-					let v = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
-					v.alpha = 0.4
-					v.backgroundColor = .black
+            let v = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+            v.alpha = 0.4
+            v.backgroundColor = .black
 					v.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(handleDismiss)))
 					return v
         }()
