@@ -27,6 +27,8 @@
 		9E5CC4B41EB518AC00C30A7D /* cartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5CC4B21EB518AC00C30A7D /* cartVC.xib */; };
 		9E5CC4B81EB51F0900C30A7D /* productCartCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5CC4B61EB51F0900C30A7D /* productCartCVCell.swift */; };
 		9E5CC4B91EB51F0900C30A7D /* productCartCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5CC4B71EB51F0900C30A7D /* productCartCVCell.xib */; };
+		9E5E7ED11FC37BBD00EB9135 /* FirstStepForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5E7ED01FC37BBD00EB9135 /* FirstStepForm.swift */; };
+		9E5E7ED31FC37BD400EB9135 /* FirstStepForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5E7ED21FC37BD400EB9135 /* FirstStepForm.xib */; };
 		9E6ED9631E71F0590086836A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6ED9621E71F0590086836A /* HomeVC.swift */; };
 		9E6ED9651E7208810086836A /* NavigationCel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6ED9641E7208810086836A /* NavigationCel.swift */; };
 		9E7517411E6B3CBD0061033E /* FlowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7517401E6B3CBD0061033E /* FlowView.xib */; };
@@ -93,6 +95,8 @@
 		9E5CC4B21EB518AC00C30A7D /* cartVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cartVC.xib; sourceTree = "<group>"; };
 		9E5CC4B61EB51F0900C30A7D /* productCartCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productCartCVCell.swift; sourceTree = "<group>"; };
 		9E5CC4B71EB51F0900C30A7D /* productCartCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = productCartCVCell.xib; sourceTree = "<group>"; };
+		9E5E7ED01FC37BBD00EB9135 /* FirstStepForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepForm.swift; sourceTree = "<group>"; };
+		9E5E7ED21FC37BD400EB9135 /* FirstStepForm.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstStepForm.xib; sourceTree = "<group>"; };
 		9E6ED9621E71F0590086836A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9E6ED9641E7208810086836A /* NavigationCel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCel.swift; sourceTree = "<group>"; };
 		9E7517401E6B3CBD0061033E /* FlowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlowView.xib; sourceTree = "<group>"; };
@@ -205,11 +209,9 @@
 			children = (
 				9E210AD41E45D500007A0B25 /* AppDelegate.swift */,
 				9E210AD81E45D500007A0B25 /* Main.storyboard */,
+				9E5E7ECB1FC3784300EB9135 /* MVC */,
 				9ECE20861E70A3740041CFB6 /* Extensions */,
 				9E4AF5061E6DF3170049230B /* Services */,
-				9EC35C5F1E46474D00666EB7 /* Model */,
-				9E75173F1E6B3C7E0061033E /* Views */,
-				9EC35C5E1E46473B00666EB7 /* ViewControllers */,
 				9E210ADE1E45D501007A0B25 /* Assets.xcassets */,
 				9E210AE01E45D501007A0B25 /* LaunchScreen.storyboard */,
 				9E210AE31E45D501007A0B25 /* Info.plist */,
@@ -254,6 +256,51 @@
 			name = cartVC;
 			sourceTree = "<group>";
 		};
+		9E5E7ECB1FC3784300EB9135 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				9E5E7ECD1FC378AF00EB9135 /* HomeMVC */,
+				9E5E7ECC1FC3787100EB9135 /* GuestMVC */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		9E5E7ECC1FC3787100EB9135 /* GuestMVC */ = {
+			isa = PBXGroup;
+			children = (
+				9E75174D1E6B4D520061033E /* FlowModels */,
+				9E7517421E6B3CE20061033E /* FlowViews */,
+				9E92834E1E733AF400558F77 /* Guest Flow */,
+			);
+			path = GuestMVC;
+			sourceTree = "<group>";
+		};
+		9E5E7ECD1FC378AF00EB9135 /* HomeMVC */ = {
+			isa = PBXGroup;
+			children = (
+				9E5E7ECE1FC378E100EB9135 /* Components */,
+				9E6ED9591E71EE4D0086836A /* HomeViews */,
+				9E6ED9611E71F0410086836A /* HomePage */,
+			);
+			path = HomeMVC;
+			sourceTree = "<group>";
+		};
+		9E5E7ECE1FC378E100EB9135 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9E5E7ECF1FC37B8600EB9135 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				9E5E7ED01FC37BBD00EB9135 /* FirstStepForm.swift */,
+				9E5E7ED21FC37BD400EB9135 /* FirstStepForm.xib */,
+			);
+			name = Forms;
+			sourceTree = "<group>";
+		};
 		9E6D8F241E6DE29B004FE7E6 /* FlowCollectionViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +318,7 @@
 				9E13CEB61EDAD4140093E3FE /* sideMenu */,
 			);
 			name = HomeViews;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		9E6ED95E1E71EE890086836A /* NavBarViews */ = {
@@ -291,26 +339,20 @@
 				9E9283571E7350E700558F77 /* SampleProductsTVC */,
 			);
 			name = HomePage;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		9E75173F1E6B3C7E0061033E /* Views */ = {
+		9E7517421E6B3CE20061033E /* FlowViews */ = {
 			isa = PBXGroup;
 			children = (
-				9E6ED9591E71EE4D0086836A /* HomeViews */,
-				9E7517421E6B3CE20061033E /* GuestFlow */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		9E7517421E6B3CE20061033E /* GuestFlow */ = {
-			isa = PBXGroup;
-			children = (
+				9E5E7ECF1FC37B8600EB9135 /* Forms */,
 				9ECE20831E709E860041CFB6 /* InputFieldsCustomization */,
 				9E6D8F241E6DE29B004FE7E6 /* FlowCollectionViews */,
 				9E7517461E6B4C930061033E /* Flow1 */,
 				9E7517471E6B4CA30061033E /* Flow2 */,
 			);
-			name = GuestFlow;
+			name = FlowViews;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		9E7517461E6B4C930061033E /* Flow1 */ = {
@@ -331,11 +373,12 @@
 			name = Flow2;
 			sourceTree = "<group>";
 		};
-		9E75174D1E6B4D520061033E /* FlowModel */ = {
+		9E75174D1E6B4D520061033E /* FlowModels */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = FlowModel;
+			name = FlowModels;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		9E92834E1E733AF400558F77 /* Guest Flow */ = {
@@ -346,6 +389,7 @@
 				9ECE20811E709BAC0041CFB6 /* AddressInfoVC.swift */,
 			);
 			name = "Guest Flow";
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		9E9283571E7350E700558F77 /* SampleProductsTVC */ = {
@@ -364,23 +408,6 @@
 				9E9283591E73514B00558F77 /* ProductCell.xib */,
 			);
 			name = ProductTableViews;
-			sourceTree = "<group>";
-		};
-		9EC35C5E1E46473B00666EB7 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				9E6ED9611E71F0410086836A /* HomePage */,
-				9E92834E1E733AF400558F77 /* Guest Flow */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		9EC35C5F1E46474D00666EB7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				9E75174D1E6B4D520061033E /* FlowModel */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		9ECE20831E709E860041CFB6 /* InputFieldsCustomization */ = {
@@ -530,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E7517451E6B3D020061033E /* SecondFlowView.xib in Resources */,
+				9E5E7ED31FC37BD400EB9135 /* FirstStepForm.xib in Resources */,
 				9E9283601E7356BB00558F77 /* ProductsVC.xib in Resources */,
 				9E7517411E6B3CBD0061033E /* FlowView.xib in Resources */,
 				9E5CC4B41EB518AC00C30A7D /* cartVC.xib in Resources */,
@@ -582,9 +610,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Vruster/Pods-Vruster-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -597,13 +628,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VrusterTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		94BE832F59443E2FD67C0CA7 /* [CP] Check Pods Manifest.lock */ = {
@@ -612,13 +646,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vruster-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9982109CC3A7F45A6567351E /* [CP] Embed Pods Frameworks */ = {
@@ -657,13 +694,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VrusterUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BDED35ADA0B13224E3F3A558 /* [CP] Copy Pods Resources */ = {
@@ -704,6 +744,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E5CC4B31EB518AC00C30A7D /* cartVC.swift in Sources */,
+				9E5E7ED11FC37BBD00EB9135 /* FirstStepForm.swift in Sources */,
 				9E75174B1E6B4CD60061033E /* secondFlowView.swift in Sources */,
 				9E13CEB81EDAD55F0093E3FE /* sideViewTableCell.swift in Sources */,
 				9ECE20821E709BAC0041CFB6 /* AddressInfoVC.swift in Sources */,
